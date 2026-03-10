@@ -1,11 +1,11 @@
-title: example.com
-description: "Satellite - jekyll blog theme"
+title: vasyapupkinski's Portfolio
+description: "안녕하세요! 개발자 vasyapupkinski의 포트폴리오 블로그입니다."
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
 
 # Social Links
 email: example@gmail.com
-github_username: github
+github_username: vasyapupkinski
 twitter_username: twitter
 instagram_username: instagram
 linkedin_username: linkedin
@@ -39,15 +39,14 @@ collections:
     permalink: /:path.html
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
       date: "1900-01-01"
 
-# Markdown newline activator 
+# Markdown newline activator
 kramdown:
   input: GFM
   hard_wrap: true
