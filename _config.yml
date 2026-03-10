@@ -4,12 +4,12 @@ logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
 
 # Social Links
-email: example@gmail.com
+email: wandorigas93@gmail.com
 github_username: vasyapupkinski
-twitter_username: twitter
-instagram_username: instagram
-linkedin_username: linkedin
-facebook_username: facebook
+twitter_username:
+instagram_username:
+linkedin_username: 이승완-seungwan-lee-2016b9383
+facebook_username:
 
 # External API
 giscus_repo: "byanko55/jekyll-theme-satellite"
