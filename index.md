@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Home"
+home: true
 ---
 
 # 🚀 LLM & Data-Centric AI Engineer
