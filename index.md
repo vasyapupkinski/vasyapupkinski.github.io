@@ -12,18 +12,19 @@ home: true
 7개월간 머신러닝 기초부터 모델 서빙까지 AI 파이프라인 전 과정을 깊이 있게 탐구했습니다. 제가 집중하는 부분은 **LLM(Large Language Models)** 기반의 개발과 효율적인 **모델 서빙**입니다.
 
 ## ✍️ My 7-Month Journey
-- **Phase 04. Model Serving & Optimization**: FastAPI/Docker 기반 모델 배포 및 성능 최적화를 위한 **양자화(Quantization), ONNX** 변환 기술 습득.
-- **Phase 03. LLM & Application**: RAG 시스템 설계, 프롬프트 엔지니어링 및 비정형 데이터 처리 파이프라인 구축.
-- **Phase 02. Deep Learning & CV**: CNN/YOLO 구조 이해 및 실전 객체 검출(Object Detection). (초급/중급 프로젝트)
-- **Phase 01. Machine Learning**: 데이터 분석 기초, 통계적 가설 검정 및 정형 데이터 기반 머신러닝 모델링.
+
+- **Part 04. 딥러닝 모델 배포하기 (Deployment & Optimization)**: FastAPI/Docker 배포, 양자화(Quantization), ONNX 변환 및 Triton 서빙 최적화. (고급 프로젝트: AdGen)
+- **Part 03. 자연어 처리 및 대규모 언어모델 (LLM)**: BERT/GPT, 프롬프트 엔지니어링, PEFT, RAG 시스템 구축. (중급 프로젝트: 제안요청서 요약)
+- **Part 02. 딥러닝 기초 및 컴퓨터 비전 (CV/DL)**: PyTorch 숙달, 객체 인식(YOLO) 및 세그멘테이션 실습. (초급 프로젝트: 헬스잇 알약 검출)
+- **Part 01. 데이터 분석 및 머신러닝 기초 (ML Basics)**: 파이썬 클래스/모듈 응용, Pandas 통계 분석 및 머신러닝 익히기.
 
 ## 💡 Key Highlights: Experience & Perseverance
 
 ### 1️⃣ Data-Centric Philosophy (GIGO)
-"데이터의 품질이 곧 모델의 성능이다." 초급 프로젝트 당시 mAP 0.99라는 고득점 뒤에 숨겨진 **데이터 누수(Leakage)**를 t-SNE 분석으로 잡아냈고, 중급 프로젝트에서는 손상된 HWP 파일들을 정밀 진단하며 데이터 정제에만 몰입했습니다. 수치를 뽑기 전, 데이터의 '무결성'을 확인하는 것이 제 엔지니어링의 시작입니다.
+"데이터의 품질이 곧 모델의 성능이다." 초급 프로젝트(Part 02) 당시 mAP 0.99 뒤에 숨겨진 **Data Leakage**를 t-SNE 분석으로 증명했고, 중급 프로젝트(Part 03)에서는 손상된 HWP 파일들을 직접 진단하며 데이터 정제에 몰입했습니다. 수치를 뽑기 전 '데이터의 무결성'을 확인하는 것이 제 엔지니어링의 시작입니다.
 
 ### 2️⃣ Advanced AI Engineering & Grit
-고급 프로젝트 **'AdGen'**에서 5단계 AI 파이프라인(배경 제거 → 생성 → 업스케일 → 보정 → 합성)을 설계했습니다. 팀원이 2명만 남은 극한의 상황에서도 **Planner/Designer LLM 이중화 로직**을 포함한 전체 오케스트레이션을 책임지고 마무리지었습니다.
+고급 프로젝트(Part 04) **'AdGen'**에서 5단계 AI 파이프라인을 설계했습니다. 팀원 대다수가 이탈한 위기에서도 Planner/Designer LLM 이중화 로직을 포함한 전체 오케스트레이션을 책임지고 끝까지 완수하여 '에이전틱(Agentic)'한 워크플로우를 구현해냈습니다.
 
 ### 3️⃣ Vision: World Monitor (Upcoming)
 최근 글로벌 개발자의 사례에서 영감을 받아, 세상을 실시간으로 관찰하고 분석하는 **World Monitor** 프로젝트를 기획 중입니다. LLM과 실시간 데이터 기술을 결합하여 세상에 가치를 더하는 시스템을 만드는 것이 목표입니다.
