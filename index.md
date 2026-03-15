@@ -21,7 +21,7 @@ home: true
 ## 💡 Key Highlights: Experience & Perseverance
 
 ### 1️⃣ Data-Centric Philosophy (GIGO)
-"데이터의 품질이 곧 모델의 성능이다." 초급 프로젝트(Part 02) 당시 mAP 0.99 뒤에 숨겨진 **Data Leakage**를 t-SNE 분석으로 증명했고, 중급 프로젝트(Part 03)에서는 손상된 HWP 파일들을 직접 진단하며 데이터 정제에 몰입했습니다. 수치를 뽑기 전 '데이터의 무결성'을 확인하는 것이 제 엔지니어링의 시작입니다.
+"데이터의 품질이 곧 모델의 성능이다." 초급 프로젝트(Part 02) 당시 mAP 0.99 뒤에 숨겨진 **Data Leakage**를 철저한 EDA 분석으로 증명했고, 중급 프로젝트(Part 03)에서는 손상된 HWP 바이너리 진단부터 CSV 메타데이터의 수차례 재구축까지, 비정형 데이터 100여 건을 완벽하게 표준화하는 정제 과정에 몰입했습니다. 수치를 뽑기 전 '데이터의 무결성'을 확인하는 것이 제 엔지니어링의 시작입니다.
 
 ### 2️⃣ Advanced AI Engineering & Grit
 고급 프로젝트(Part 04) **'AdGen'**에서 5단계 AI 파이프라인을 설계했습니다. 팀원 대다수가 이탈한 위기에서도 Planner/Designer LLM 이중화 로직을 포함한 전체 오케스트레이션을 책임지고 끝까지 완수하여 '에이전틱(Agentic)'한 워크플로우를 구현해냈습니다.
