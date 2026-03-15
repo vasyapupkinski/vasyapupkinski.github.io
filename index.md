@@ -12,7 +12,7 @@ home: true
 7개월간 머신러닝 기초부터 모델 서빙까지 AI 파이프라인 전 과정을 깊이 있게 탐구했습니다. 제가 집중하는 부분은 **LLM(Large Language Models)** 기반의 개발과 효율적인 **모델 서빙**입니다.
 
 ## ✍️ My 7-Month Journey
-- **Phase 04. Model Serving**: FastAPI/Docker 기반 모델 배포 및 End-to-End AI 서비스 아키텍처 설계. (고급 프로젝트: AdGen)
+- **Phase 04. Model Serving & Optimization**: FastAPI/Docker 기반 모델 배포 및 성능 최적화를 위한 **양자화(Quantization), ONNX** 변환 기술 습득.
 - **Phase 03. LLM & Application**: RAG 시스템 설계, 프롬프트 엔지니어링 및 비정형 데이터 처리 파이프라인 구축.
 - **Phase 02. Deep Learning & CV**: CNN/YOLO 구조 이해 및 실전 객체 검출(Object Detection). (초급/중급 프로젝트)
 - **Phase 01. Machine Learning**: 데이터 분석 기초, 통계적 가설 검정 및 정형 데이터 기반 머신러닝 모델링.
