@@ -1,6 +1,31 @@
----
-title: "Projects"
+﻿---
 layout: page
+title: "Projects"
+category: "3. Projects"
+order: 3
 ---
 
-팀 프로젝트(현업 및 협업)와 개인 프로젝트 결과물을 체계적으로 정리한 아카이브입니다.
+<h2 style='border-bottom: 2px solid #F86158; padding-bottom: 10px;'>👥 Team Projects</h2>
+
+<div id='category-list'>
+    <ul class='paginated-list'>
+    {% assign teams = site.pages | where: 'category', 'Team Projects' | sort: 'order' %}
+    {% for post in teams %}
+        <li class='paginated-item'>
+            <div id='article_content'>
+                <div class='box_contents'>
+                    <a href='{{ post.url | prepend: site.baseurl }}'><h1 class='title_post'>{{ post.title }}</h1></a>
+                    <div class='info-post'>
+                        <span class='category' style='color: #F86158;'>Team Project</span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+
+<br><br>
+
+<h2 style='border-bottom: 2px solid #2ACB45; padding-bottom: 10px;'>👤 Personal Projects</h2>
+<p style='color: #888;'>시작 단계의 개인 프로젝트들이 이곳에 표시됩니다.</p>

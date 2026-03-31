@@ -1,7 +1,7 @@
----
+﻿---
 layout: page
 title: "AI 기반 광고 이미지 생성 서비스 (AdGen)"
-category: "3. Projects / Team Projects"
+category: "Team Projects"
 order: 3
 ---
 
