@@ -35,9 +35,9 @@ home: true
 ## 03. Technical Skill
 **핵심 기술 및 전문 도구**
 
-| **AI & ML** | **MLOps** | **Productivity** |
+| **AI & ML** | **MLOps & Serving** | **Productivity** |
 | :--- | :--- | :--- |
-| **Language**: Python<br>**Core**: PyTorch, Pandas<br>**Vision**: YOLOv8, FLUX.1<br>**NLP**: LangChain, LangGraph | **Serving**: FastAPI<br>**Infra**: Docker, WSL2<br>**Opt**: NF4, VRAMHandler, ONNX | **VCS**: Git, GitHub<br>**Docs**: Notion |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) <br> ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) <br> ![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat-square&logo=ultralytics&logoColor=black) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) <br> ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![Roboflow](https://img.shields.io/badge/Roboflow-7601FF?style=flat-square&logo=roboflow&logoColor=white) | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) <br> ![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white) ![WSL2](https://img.shields.io/badge/WSL2-0078D4?style=flat-square&logo=windows-terminal&logoColor=white) <br> ![Quantization](https://img.shields.io/badge/NF4%20|%20VRAM-EBA000?style=flat-square) | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) <br> ![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white) |
 
 ---
 
