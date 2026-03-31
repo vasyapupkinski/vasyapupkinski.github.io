@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page
 title: "Projects"
 category: "3. Projects"
@@ -9,8 +9,9 @@ order: 3
 
 <div id='category-list'>
     <ul class='paginated-list'>
-    {% assign teams = site.pages | where: 'category', 'Team Projects' | sort: 'order' %}
+    {% assign teams = site.pages | where: 'category', '3. Projects / Team Projects' | sort: 'order' %}
     {% for post in teams %}
+        {% unless post.url contains 'index.html' %}
         <li class='paginated-item'>
             <div id='article_content'>
                 <div class='box_contents'>
@@ -21,6 +22,7 @@ order: 3
                 </div>
             </div>
         </li>
+        {% endunless %}
     {% endfor %}
     </ul>
 </div>
