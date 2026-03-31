@@ -37,7 +37,7 @@ home: true
 
 | **Category** | **Specific Skills & Tools** |
 | :--- | :--- |
-| **AI & ML** | **Language**: Python<br>**Core**: PyTorch, Scikit-learn, Pandas<br>**Vision**: YOLOv8, FLUX.1 (Diffusion)<br>**NLP**: LangGraph, Upstage, Qdrant |
+| **AI & ML** | **Language**: Python<br>**Core**: PyTorch, Scikit-learn, Pandas<br>**Vision**: YOLOv8, FLUX.1 (Diffusion)<br>**NLP**: LangChain, LangGraph, Upstage, Qdrant |
 | **MLOps** | **Serving**: FastAPI<br>**Infrastructure**: Docker, WSL2<br>**Optimization**: NF4, VRAMHandler, ONNX |
 | **Productivity** | **VCS**: Git, GitHub<br>**Docs**: Notion |
 
