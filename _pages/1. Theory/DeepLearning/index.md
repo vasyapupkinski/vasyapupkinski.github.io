@@ -1,9 +1,9 @@
----
+﻿---
 layout: page
-title: "Deep Learning"
+title: "DeepLearning"
 category: "1. Theory / DeepLearning"
 order: 2
 ---
 
-## 딥러닝 이론 정리
-노션에서 정리한 딥러닝 이론 내용을 이곳에 채워주세요.
+## DeepLearning 이론 정리
+인공 신경망, 오차 역전파부터 최신 트랜스포머 아키텍처까지 딥러닝 핵심 원리를 정리합니다.
