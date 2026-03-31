@@ -4,54 +4,50 @@ title: "Home"
 home: true
 ---
 
-# LLM & Data-Centric AI Engineer
+# Python · FastAPI · LLM Orchestration
+### **이승완 | LLM & Data-Centric AI Engineer**
 
-안녕하세요! 데이터의 본질적인 가치를 가장 중요하게 생각하고, 이를 이용해 LLM을 더 똑똑하게 만들고 서비스로 연결하는 일에 열정을 가진 **이승완**입니다.
-
-## Focus: LLM & Application
-7개월간 머신러닝 기초부터 모델 서빙까지 AI 파이프라인 전 과정을 깊이 있게 탐구했습니다. 제가 집중하는 부분은 **LLM(Large Language Models)** 기반의 개발과 효율적인 **모델 서빙**입니다.
-
-## My 7-Month Learning Journey
-
-### 1. 파이썬 기초 및 머신러닝 입문
-*   **프로그래밍 기초**: 객체와 클래스, 모듈 및 라이브러리 활용 등 **파이썬 응용 능력** 강화.
-*   **데이터 분석**: Pandas(DataFrame 마스터), 기초 통계, 데이터 시각화 및 Toolkit 활용.
-*   **머신러닝**: 지도 학습(회귀/분류), **앙상블 기법**, 차원 축소 및 모델 최적화 연구.
-
-### 2. 딥러닝 및 컴퓨터 비전 전문성
-*   **딥러닝 심화**: **PyTorch** 활용법 및 주요 딥러닝 네트워크(CNN 등) 직접 구현.
-*   **컴퓨터 비전**: 분류, 객체 인식(YOLO), 세그멘테이션 및 **생성형 AI(VAE의 Reparameterization Trick 등)** 학습.
-*   **협업 도구**: Mac/Windows 환경에서의 Git 버전 관리 및 개발 환경 구축.
-
-### 3. 자연어 처리(NLP) 및 생성형 AI
-*   **NLP 기초**: 텍스트 데이터 전처리, 임베딩, 자연어 처리의 발전 과정 학습.
-*   **최신 모델**: 사전학습 모델(BERT, GPT), LLM 활용 및 **프롬프트 엔지니어링**.
-*   **심화 기술**: 효율적인 미세 조정(**PEFT/LoRA/QLoRA**), 검색 증강 생성(**RAG**) 기술 습득.
-
-### 4. AI 서비스 배포 및 MLOps 
-*   **모델 서빙**: **FastAPI**를 이용한 모델 서빙 및 웹앱 프레임워크 기반 프로토타입 개발.
-*   **인프라 및 최적화**: **Docker** 컨테이너화, **ONNX/INT8 양자화**를 통한 **9.65배 추론 속도 가속** 및 경량화 기술 확보.
-
-## Engineering Mindset: Experience & Grit
-
-### 1️. Data-Centric Philosophy (GIGO)
-**"데이터의 품질이 곧 모델의 성능이다."**
-지표(Score)의 높음보다 **데이터의 무결성**을 먼저 의심합니다. 초급 프로젝트(**Pill-Detection**) 당시 mAP 0.99라는 결과에 안주하지 않고, 클러스터링 기반 분석을 통해 학습-검증 데이터 간의 오염(Leakage)을 발견했습니다. 이후 **840개의 잘못된 라벨링 데이터를 직접 복구**하는 데이터 오디팅을 거쳐 모델의 신뢰성을 근본적으로 확보했습니다. 수치를 뽑기 전 '데이터의 실체'를 확인하는 것이 제 엔지니어링의 최우선 원칙입니다.
-
-### 2️. Specialized System Design & Logic
-**"데이터를 어떻게 배치하고 흐르게 할 것인가."**
-중급 프로젝트(**Bid-Analysis RAG**)에서 비정형 데이터인 100여 건의 HWP 문서를 처리하기 위해 **일주일간 밤낮으로 EDA와 데이터 정제**에 몰두했습니다. 노이즈를 제거한 텍스트를 **검색용(Embedding)**과 **생성용(Context)** 데이터셋으로 분리 관리하는 **이중화 파이프라인**을 설계했습니다. 단순한 모델 호출을 넘어, 데이터의 정교한 흐름 제어가 곧 시스템의 정밀도로 이어진다는 것을 깊이 있게 경험했습니다.
-
-### 3️. Engineering Grit: Accountability
-**"팀의 위기를 개인의 성장과 책임감의 기회로 삼습니다."**
-고급 프로젝트(**AdGen**) 당시 팀원 이탈이라는 돌발 상황 속에서 5단계 AI 파이프라인과 **Planner/Designer LLM 이중화 로직**을 독자적으로 설계했습니다. 비록 물리적 시간의 한계로 미완성인 부분이 있으나, 전체 오케스트레이션을 책임지고 맡은 바 최선을 다해 끝까지 완수해냈습니다. 위기 속에서도 끝까지 결과물을 만들어내는 **엔지니어링 근성(Grit)**을 증명한 소중한 경험이었습니다.
-
-### 4️. Vision: Clairvoyance (Upcoming)
-최근 글로벌 개발자의 사례에서 영감을 받아, 세상을 실시간으로 관찰하고 분석하는 **Clairvoyance** 프로젝트를 기획 중입니다. LLM과 실시간 데이터 기술을 결합하여 세상에 실질적인 가치를 더하는 시스템을 만드는 것이 다음 목표입니다.
+데이터 무결성(Data Integrity)에서 시작해, 안정적인 AI 오케스트레이션 흐름을 설계하는 주니어 AI 엔지니어입니다.
+복잡한 파이프라인의 병목을 찾아내고, 이를 FastAPI와 LLM 이중화 로직으로 해결하며 운영 가능한 자동화 워크플로우를 만듭니다.
 
 ---
 
-### Explore My Work
-| [Theory]({{ site.baseurl }}/1. Theory/) | [Milestones]({{ site.baseurl }}/2. Milestones/) | [Projects]({{ site.baseurl }}/3. Projects/) |
-|:---:|:---:|:---:|
-| 기술 블로그 & 이론 정리 | 7개월간의 교육 성실도 기록 | 주요 프로젝트 결과물 |
+## 01. What I Can Do
+**이런 일을 할 수 있습니다**
+
+*   **데이터 중심 오디팅 (Data-Centric Auditing)**: mAP 0.99의 허구성을 파헤치고 840개의 라벨 오류를 전수 복구하는 데이터 무결성 확보 능력을 갖췄습니다.
+*   **문서 처리형 RAG 설계 (Document-Retrieval RAG)**: 비정형 HWP/PDF 문서 파싱 및 하이브리드 검색 레이어 설계를 통해 신뢰도 높은 정보 추출 시스템을 구축합니다.
+*   **에이전틱 워크플로우 (Agentic Workflow)**: Planner-Designer 이중화 및 Failover 구조를 설계해 예외 대응이 가능한 지능형 자동화 흐름을 만듭니다.
+*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4 양자화 및 ONNX 가속(9.65배)을 통해 실제 운영 환경에서의 서비스 안정성과 속도를 확보합니다.
+
+---
+
+## 02. Skill
+**전문성을 뒷받침하는 핵심 기술셋**
+
+| **Category** | **Specific Skills & Tools** |
+| :--- | :--- |
+| **AI & ML** | **Language**: Python / **Core**: PyTorch, Scikit-learn, Pandas<br>**Vision**: YOLOv8, FLUX.1 / **NLP**: LangGraph, Upstage, Qdrant |
+| **MLOps** | **Framework**: FastAPI / **Infrastructure**: Docker, WSL2<br>**Optimization**: NF4 Quantization, VRAMHandler, ONNX |
+| **Productivity** | **VCS**: Git, GitHub / **Documentation**: Notion |
+
+---
+
+## 03. Featured Work
+**대표 프로젝트 (Role: Team Leader)**
+
+| **Project** | **Technical Highlights & Results** |
+| :--- | :--- |
+| [**AdGen**]({{ site.baseurl }}/3. Projects/adgen.html) | **AI 광고 자동 제작 솔루션**<br>기획-생성-수정 5단계 완전 자동화 파이프라인 설계<br>LLM 이중화(Failover) 및 VRAM 최적화로 생성 속도 77% 단축 |
+| [**Bid-Analysis Agentic RAG**]({{ site.baseurl }}/3. Projects/bid-analysis-rag.html) | **입찰 공고 분석 Agentic RAG**<br>Upstage Layout Analysis 기반 비정형 문서 파싱<br>BM25 + Vector 하이브리드 검색 기반 고정밀 RAG 구축 |
+| [**Pill-Detection**]({{ site.baseurl }}/3. Projects/pill-detection.html) | **지표의 허구성을 입증한 데이터 최적화**<br>데이터 누수(Leakage) 식별 및 840개 라벨 오염 전수 복구 (57%)<br>HSV 변인 통제 실험을 통한 데이터 중심 mAP 0.98 달성 |
+
+---
+
+## 04. Links & Resources
+**더 자세한 내용을 확인해보세요**
+
+*   [**Project Archive**]({{ site.baseurl }}/3. Projects/): 주요 프로젝트 상세 결과물 및 기술적 고찰
+*   [**Milestone History**]({{ site.baseurl }}/2. Milestones/): AI 엔지니어 성장 기록
+*   [**Theory Archive**]({{ site.baseurl }}/1. Theory/): 기술 블로그 및 AI 이론 정리
+*   [**GitHub**](https://github.com/vasyapupkinski) / [**LinkedIn**](https://www.linkedin.com/in/%EC%9D%B4%EC%8A%B9%EC%99%84-seungwan-lee-2016b9383/) / [**Email**](mailto:wandorigas93@gmail.com)

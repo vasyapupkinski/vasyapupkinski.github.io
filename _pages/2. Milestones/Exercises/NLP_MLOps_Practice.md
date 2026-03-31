@@ -8,6 +8,12 @@ order: 2
 ## 실습 개요
 텍스트 파싱부터 최신 LLM 아키텍처, 그리고 이를 실서비스에 배포하기 위한 MLOps 인프라 구축까지의 통합 실습 기록입니다.
 
+## 주요 사용 기술
+- `Python`, `HuggingFace`, `LangChain`, `LangGraph`
+- `vLLM`, `NVIDIA Triton`, `Docker`, `ONNX`
+- `AWS Bedrock (Boto3)`, `Qdrant`, `PostgreSQL`
+
+
 ## Part 3. 자연어 처리(NLP) 및 생성형 AI
 *   **01_NLP_and_Transformers**: 텍스트 데이터 전처리, 임베딩, BERT/GPT 등 트랜스포머 아키텍처 학습.
 *   **02_LLM_FineTuning**: `klue/bert-base`, `Gemma` 모델 기반의 **PEFT(LoRA/QLoRA)** 및 프롬프트 엔지니어링 실습.
@@ -19,10 +25,7 @@ order: 2
     *   **최적화**: **ONNX**, Symmetric/Asymmetric **INT8 양자화** 실습.
     *   **인프라**: **vLLM (PagedAttention)**, **Triton Inference Server** 기반 고성능 서빙 및 **Docker** 컨테이너화.
 
-## 주요 사용 기술
-- `Python`, `HuggingFace`, `LangChain`, `LangGraph`
-- `vLLM`, `NVIDIA Triton`, `Docker`, `ONNX`
-- `AWS Bedrock (Boto3)`, `Qdrant`, `PostgreSQL`
+
 
 ## 관련 링크
 - [GitHub 실습 코드 바로가기](https://github.com/vasyapupkinski/codeit-ai-practice/tree/main/NLP_MLOps%26Serving)
