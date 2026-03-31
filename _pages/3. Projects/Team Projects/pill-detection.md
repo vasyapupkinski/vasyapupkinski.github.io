@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "알약 객체 검출 및 데이터 신뢰성 오디팅"
-category: "3. Projects"
+category: "3. Projects / Team Projects"
 order: 1
 ---
 

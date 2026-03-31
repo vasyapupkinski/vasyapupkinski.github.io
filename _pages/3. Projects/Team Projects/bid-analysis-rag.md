@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "입찰 공고 분석 Agentic RAG"
-category: "3. Projects"
+category: "3. Projects / Team Projects"
 order: 2
 ---
 
