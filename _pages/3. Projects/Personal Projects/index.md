@@ -1,7 +1,7 @@
 ﻿---
 layout: page
-title: "2. Personal Projects"
-category: "3. Projects / 2. Personal Projects"
+title: "Personal Projects"
+category: "3. Projects / Personal Projects"
 order: 2
 ---
 

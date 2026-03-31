@@ -1,7 +1,7 @@
 ﻿---
 layout: page
 title: "AI Foundations"
-category: "1. Theory / 0. AI Foundations"
+category: "1. Theory / AI Foundations"
 order: 0
 ---
 

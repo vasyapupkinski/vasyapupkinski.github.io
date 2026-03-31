@@ -1,7 +1,7 @@
 ﻿---
 layout: page
-title: "1. Team Projects"
-category: "3. Projects / 1. Team Projects"
+title: "Team Projects"
+category: "3. Projects / Team Projects"
 order: 1
 ---
 

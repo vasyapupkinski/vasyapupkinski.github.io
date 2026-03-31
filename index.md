@@ -26,9 +26,9 @@ home: true
 
 | **Project** | **Team & Role** | **Period** | **Technical Highlights & Results** |
 | :--- | :--- | :--- | :--- |
-| [**AdGen 🔗**]({{ site.baseurl }}/3. Projects/1. Team Projects/adgen.html) | **팀장 (AI Core)**<br>4인 (2인 이탈) | 26.01.30 ~<br>26.02.27 | **계층형 오케스트레이션으로 품질 제어**<br>VRAM 최적화 및 스테이징 설계로 이미지 생성 속도 **77% 단축** |
-| [**Bid-Analysis Agentic RAG 🔗**]({{ site.baseurl }}/3. Projects/1. Team Projects/bid-analysis-rag.html) | **팀장 (Arch/PM)**<br>4인 | 25.12.10 ~<br>26.01.05 | **비정형 노이즈 정제에 몰입, 텍스트 이원화로 정밀도 극대화**<br>사용자 목적 기반 필터링 및 메타데이터 활용으로 **수치 오류율 0%** 달성 |
-| [**Pill-Detection 🔗**]({{ site.baseurl }}/3. Projects/1. Team Projects/pill-detection.html) | **팀장 (PM/EDA)**<br>5인 | 25.10.20 ~<br>25.11.05 | **의미 없는 점수 경쟁 대신 과적합의 원인(Leakage) 규명에 집중**<br>840개 오염 라벨 복구 및 HSV 변인 통제로 **실제 현장용 mAP 0.98** 확보 |
+| [**AdGen 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/adgen.html) | **팀장 (AI Core)**<br>4인 (2인 이탈) | 26.01.30 ~<br>26.02.27 | **계층형 오케스트레이션으로 품질 제어**<br>VRAM 최적화 및 스테이징 설계로 이미지 생성 속도 **77% 단축** |
+| [**Bid-Analysis Agentic RAG 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/bid-analysis-rag.html) | **팀장 (Arch/PM)**<br>4인 | 25.12.10 ~<br>26.01.05 | **비정형 노이즈 정제에 몰입, 텍스트 이원화로 정밀도 극대화**<br>사용자 목적 기반 필터링 및 메타데이터 활용으로 **수치 오류율 0%** 달성 |
+| [**Pill-Detection 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/pill-detection.html) | **팀장 (PM/EDA)**<br>5인 | 25.10.20 ~<br>25.11.05 | **의미 없는 점수 경쟁 대신 과적합의 원인(Leakage) 규명에 집중**<br>840개 오염 라벨 복구 및 HSV 변인 통제로 **실제 현장용 mAP 0.98** 확보 |
 
 ---
 
