@@ -22,7 +22,7 @@ home: true
 ---
 
 ## 02. Featured Work
-**대표 프로젝트 (Role: Team Leader)**
+**대표 프로젝트**
 
 | **Project** | **Team & Role** | **Period** | **Technical Highlights & Results** |
 | :--- | :--- | :--- | :--- |
