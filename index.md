@@ -32,8 +32,19 @@ home: true
 
 ---
 
-## 03. Technical Skill
-**핵심 기술 및 전문 도구**
+<style>
+  .skill-list img {
+    display: inline-block !important;
+    width: auto !important;
+    height: 25px !important;
+    margin: 2px 4px !important;
+    vertical-align: middle !important;
+  }
+  .skill-list p, .skill-list ul, .skill-list li {
+    display: block !important;
+    margin-bottom: 5px !important;
+  }
+</style>
 
 <div class="skill-list" markdown="1">
 
