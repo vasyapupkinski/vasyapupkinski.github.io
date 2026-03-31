@@ -40,7 +40,7 @@ home: true
 | :--- | :--- |
 | [**AdGen**]({{ site.baseurl }}/3. Projects/adgen.html) | **AI 광고 자동 제작 솔루션**<br>기획-생성-수정 5단계 완전 자동화 파이프라인 설계<br>LLM 이중화(Failover) 및 VRAM 최적화로 생성 속도 77% 단축 |
 | [**Bid-Analysis Agentic RAG**]({{ site.baseurl }}/3. Projects/bid-analysis-rag.html) | **입찰 공고 분석 Agentic RAG**<br>Upstage Layout Analysis 기반 비정형 문서 파싱<br>BM25 + Vector 하이브리드 검색 기반 고정밀 RAG 구축 |
-| [**Pill-Detection**]({{ site.baseurl }}/3. Projects/pill-detection.html) | **지표의 허구성을 입증한 데이터 최적화**<br>데이터 누수(Leakage) 식별 및 840개 라벨 오염 전수 복구 (57%)<br>HSV 변인 통제 실험을 통한 데이터 중심 mAP 0.98 달성 |
+| [**Pill-Detection**]({{ site.baseurl }}/3. Projects/pill-detection.html) | **가짜 정확도(mAP 0.99)의 허구성을 파헤친 데이터 오디팅**<br>타 팀이 의미 없는 점수 경쟁에 매몰될 때, **집요한 EDA**로 과적합의 근본 원인(Leakage)을 규명<br>840개 오염 라벨 전수 복구 및 HSV 변인 통제로 **실제 현장용 mAP 0.98** 달성 |
 
 ---
 
