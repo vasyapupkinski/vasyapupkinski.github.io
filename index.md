@@ -35,11 +35,9 @@ home: true
 ## 03. Technical Skill
 **핵심 기술 및 전문 도구**
 
-| **Category** | **Specific Skills & Tools** |
-| :--- | :--- |
-| **AI & ML** | **Language**: Python<br>**Core**: PyTorch, Scikit-learn, Pandas<br>**Vision**: YOLOv8, FLUX.1 (Diffusion)<br>**NLP**: LangChain, LangGraph, Upstage, Qdrant |
-| **MLOps** | **Serving**: FastAPI<br>**Infrastructure**: Docker, WSL2<br>**Optimization**: NF4, VRAMHandler, ONNX |
-| **Productivity** | **VCS**: Git, GitHub<br>**Docs**: Notion |
+| **AI & ML** | **MLOps** | **Productivity** |
+| :--- | :--- | :--- |
+| **Language**: Python<br>**Core**: PyTorch, Pandas<br>**Vision**: YOLOv8, FLUX.1<br>**NLP**: LangChain, LangGraph | **Serving**: FastAPI<br>**Infra**: Docker, WSL2<br>**Opt**: NF4, VRAMHandler, ONNX | **VCS**: Git, GitHub<br>**Docs**: Notion |
 
 ---
 
