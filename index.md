@@ -49,4 +49,4 @@ home: true
 *   [**Project Archive**]({{ site.baseurl }}/3. Projects/): 주요 프로젝트 상세 결과물 및 기술적 고찰
 *   [**Milestone History**]({{ site.baseurl }}/2. Milestones/): AI 엔지니어 성장 기록
 *   [**Theory Archive**]({{ site.baseurl }}/1. Theory/): 기술 블로그 및 AI 이론 정리
-*   [**GitHub**](https://github.com/vasyapupkinski) / [**LinkedIn**](https://www.linkedin.com/in/%EC%9D%B4%EC%8A%B9%EC%99%84-seungwan-lee-2016b9383/) / [**Email**](mailto:wandorigas93@gmail.com)
+*   [**GitHub**](https://github.com/vasyapupkinski) / [**Email**](mailto:wandorigas93@gmail.com) / [**LinkedIn**](https://www.linkedin.com/in/%EC%9D%B4%EC%8A%B9%EC%99%84-seungwan-lee-2016b9383/)
