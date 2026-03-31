@@ -7,8 +7,8 @@ home: true
 # Python · FastAPI · LLM Orchestration
 ### **이승완 | LLM & Data-Centric AI Engineer**
 
-데이터 무결성(Data Integrity)에서 시작해, 안정적인 AI 오케스트레이션 흐름을 설계하는 주니어 AI 엔지니어입니다.
-복잡한 파이프라인의 병목을 찾아내고, 이를 FastAPI와 LLM 이중화 로직으로 해결하며 운영 가능한 자동화 워크플로우를 만듭니다.
+데이터의 무결성(Data Integrity)과 시스템의 효율성(Efficiency)을 최우선으로 가치를 창출합니다.
+현장의 노이즈를 정제하는 집요함과, 모델이 실제 서비스로 작동하게 만드는 엔지니어링 역량에 집중합니다.
 
 ---
 
@@ -18,11 +18,22 @@ home: true
 *   **데이터 중심 오디팅 (Data-Centric Auditing)**: mAP 0.99의 허구성을 파헤치고 840개의 라벨 오류를 전수 복구하는 데이터 무결성 확보 능력을 갖췄습니다.
 *   **문서 처리형 RAG 설계 (Document-Retrieval RAG)**: 비정형 HWP/PDF 문서 파싱 및 하이브리드 검색 레이어 설계를 통해 신뢰도 높은 정보 추출 시스템을 구축합니다.
 *   **에이전틱 워크플로우 (Agentic Workflow)**: Planner-Designer 이중화 및 Failover 구조를 설계해 예외 대응이 가능한 지능형 자동화 흐름을 만듭니다.
-*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4 양자화 및 ONNX 가속(9.65배)을 통해 실제 운영 환경에서의 서비스 안정성과 속도를 확보합니다.
+*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4 양자화 및 ONNX 가속을 통해 실제 운영 환경에서의 서비스 안정성과 속도를 확보합니다.
 
 ---
 
-## 02. Skill
+## 02. Featured Work
+**대표 프로젝트 (Role: Team Leader)**
+
+| **Project** | **Team & Role** | **Period** | **Technical Highlights & Results** |
+| :--- | :--- | :--- | :--- |
+| [**AdGen 🔗**]({{ site.baseurl }}/3. Projects/adgen.html) | **팀장 (AI Core)**<br>4인 (2인 이탈) | 26.01.30 ~<br>26.02.27 | **타 팀의 기능 구현 치중 시, 계층형 오케스트레이션으로 품질 제어**<br>VRAM 최적화 및 스테이징 설계로 이미지 생성 속도 **77% 단축** |
+| [**Bid-Analysis Agentic RAG 🔗**]({{ site.baseurl }}/3. Projects/bid-analysis-rag.html) | **팀장 (Arch/PM)**<br>4인 | 25.12.10 ~<br>26.01.05 | **비정형 노이즈 정제에 몰입, 텍스트 이원화로 정밀도 극대화**<br>사용자 목적 기반 필터링 및 메타데이터 활용으로 **수치 오류율 0%** 달성 |
+| [**Pill-Detection 🔗**]({{ site.baseurl }}/3. Projects/pill-detection.html) | **팀장 (PM/EDA)**<br>5인 | 25.10.20 ~<br>25.11.05 | **의미 없는 점수 경쟁 대신 과적합의 원인(Leakage) 규명에 집중**<br>840개 오염 라벨 복구 및 HSV 변인 통제로 **실제 현장용 mAP 0.98** 확보 |
+
+---
+
+## 03. Skill
 **전문성을 뒷받침하는 핵심 기술셋**
 
 | **Category** | **Specific Skills & Tools** |
@@ -30,17 +41,6 @@ home: true
 | **AI & ML** | **Language**: Python / **Core**: PyTorch, Scikit-learn, Pandas<br>**Vision**: YOLOv8, FLUX.1 / **NLP**: LangGraph, Upstage, Qdrant |
 | **MLOps** | **Framework**: FastAPI / **Infrastructure**: Docker, WSL2<br>**Optimization**: NF4 Quantization, VRAMHandler, ONNX |
 | **Productivity** | **VCS**: Git, GitHub / **Documentation**: Notion |
-
----
-
-## 03. Featured Work
-**대표 프로젝트 (Role: Team Leader)**
-
-| **Project** | **Technical Highlights & Results** |
-| :--- | :--- |
-| [**AdGen**]({{ site.baseurl }}/3. Projects/adgen.html) | **AI 광고 자동 제작 솔루션**<br>기획-생성-수정 5단계 완전 자동화 파이프라인 설계<br>LLM 이중화(Failover) 및 VRAM 최적화로 생성 속도 77% 단축 |
-| [**Bid-Analysis Agentic RAG**]({{ site.baseurl }}/3. Projects/bid-analysis-rag.html) | **입찰 공고 분석 Agentic RAG**<br>Upstage Layout Analysis 기반 비정형 문서 파싱<br>BM25 + Vector 하이브리드 검색 기반 고정밀 RAG 구축 |
-| [**Pill-Detection**]({{ site.baseurl }}/3. Projects/pill-detection.html) | **가짜 정확도(mAP 0.99)의 허구성을 파헤친 데이터 오디팅**<br>타 팀이 의미 없는 점수 경쟁에 매몰될 때, **집요한 EDA**로 과적합의 근본 원인(Leakage)을 규명<br>840개 오염 라벨 전수 복구 및 HSV 변인 통제로 **실제 현장용 mAP 0.98** 달성 |
 
 ---
 
