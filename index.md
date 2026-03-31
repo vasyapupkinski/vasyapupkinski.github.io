@@ -69,8 +69,6 @@ home: true
 
 </div>
 
-</div>
-
 ---
 
 ## 04. Links & Resources
