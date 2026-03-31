@@ -4,8 +4,7 @@ title: "Home"
 home: true
 ---
 
-# Python · FastAPI · LLM Orchestration
-### **이승완 | LLM & Data-Centric AI Engineer**
+# **이승완 | LLM & Data-Centric AI Engineer**
 
 데이터의 무결성(Data Integrity)과 시스템의 효율성(Efficiency)을 최우선으로 가치를 창출합니다.
 현장의 노이즈를 정제하는 집요함과, 모델이 실제 서비스로 작동하게 만드는 엔지니어링 역량에 집중합니다.
@@ -18,7 +17,7 @@ home: true
 *   **데이터 중심 오디팅 (Data-Centric Auditing)**: mAP 0.99의 허구성을 파헤치고 840개의 라벨 오류를 전수 복구하는 데이터 무결성 확보 능력을 갖췄습니다.
 *   **문서 처리형 RAG 설계 (Document-Retrieval RAG)**: 비정형 HWP/PDF 문서 파싱 및 하이브리드 검색 레이어 설계를 통해 신뢰도 높은 정보 추출 시스템을 구축합니다.
 *   **에이전틱 워크플로우 (Agentic Workflow)**: Planner-Designer 이중화 및 Failover 구조를 설계해 예외 대응이 가능한 지능형 자동화 흐름을 만듭니다.
-*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4 양자화 및 ONNX 가속을 통해 실제 운영 환경에서의 서비스 안정성과 속도를 확보합니다.
+*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4 양자화 및 ONNX 가속(9.65배)을 통해 실제 운영 환경에서의 서비스 안정성과 속도를 확보합니다.
 
 ---
 
@@ -33,14 +32,20 @@ home: true
 
 ---
 
-## 03. Skill
-**전문성을 뒷받침하는 핵심 기술셋**
+## 03. Technical Skill
+**핵심 기술 및 전문 도구**
 
-| **Category** | **Specific Skills & Tools** |
-| :--- | :--- |
-| **AI & ML** | **Language**: Python / **Core**: PyTorch, Scikit-learn, Pandas<br>**Vision**: YOLOv8, FLUX.1 / **NLP**: LangGraph, Upstage, Qdrant |
-| **MLOps** | **Framework**: FastAPI / **Infrastructure**: Docker, WSL2<br>**Optimization**: NF4 Quantization, VRAMHandler, ONNX |
-| **Productivity** | **VCS**: Git, GitHub / **Documentation**: Notion |
+| **Category** | **Area** | **Specific Skills & Tools** |
+| :--- | :--- | :--- |
+| **AI & ML** | **Language** | Python |
+| | **Core** | PyTorch, Scikit-learn, Pandas |
+| | **Vision** | YOLOv8, FLUX.1 (Diffusion) |
+| | **NLP** | LangGraph, Upstage, Qdrant |
+| **MLOps** | **Serving** | FastAPI |
+| | **Infrastructure** | Docker, WSL2 |
+| | **Optimization** | NF4 Quantization, VRAMHandler, ONNX |
+| **Productivity** | **VCS** | Git, GitHub |
+| | **Docs** | Notion |
 
 ---
 
