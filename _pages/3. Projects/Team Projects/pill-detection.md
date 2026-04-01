@@ -242,33 +242,8 @@ Phase 3에서 드러난 이 치명적인 결함들에 대해, 팀장으로서 �
 
 의사결정에 따라 다음과 같이 **의사 레이블링 (Pseudo-Labeling) 워크플로우**를 기획 및 구현했습니다. 단순히 오류 데이터를 버리면 학습 데이터가 반 토막 나기 때문에, 신뢰할 수 있는 정상 데이터로 먼저 베이스라인 모델을 학습시킨 뒤, 그 모델이 오류 데이터의 누락된 라벨을 복원하는 전략입니다.
 
-```mermaid
-graph TD
-    A["<b>원본 데이터 (1,489장)</b>"] --> B{"데이터 무결성 검수"}
-    
-    B -- "정상 (Clean Set)" --> C["Clean Set (639장)"]
-    B -- "오류 (Error Set: 라벨 누락 57%)" --> D["Error Set (850장)"]
-    
-    C --> E["<b>1. 베이스라인 모델 학습</b>"]
-    E --> F["베이스라인 모델 완성"]
-    
-    F --> G["<b>2. 의사 레이블링 (모델 추론)</b>"]
-    D --> G
-    G --> H["복원된 데이터셋 (850장)"]
-    
-    C --> I["데이터 통합 (Clean + 복원)"]
-    H --> I
-    
-    I --> J["<b>3. 최종 데이터 클렌징</b><br/>(이상치 17개 제거)"]
-    J --> K["<b>최종 고품질 데이터셋 (1,472장)</b>"]
-    
-    K --> L["데이터 분할<br/>(7:1.5:1.5)"]
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#bbf,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
-    style K fill:#dfd,stroke:#333,stroke-width:4px
-```
+![데이터 파이프라인 워크플로우: 정상 데이터와 프로세스를 거쳐 복원된 데이터를 하나로 결합하여 무결성을 확보함](/assets/images/projects/pill-detection/data-pipeline-final.png)
+<br>
 
 **Roboflow**를 활용하여 복원 과정의 시각적 검증과 라벨 보정을 수행했습니다.
 
