@@ -139,9 +139,6 @@ master_data = defaultdict(lambda: {
 
 > **결론**: 모든 데이터가 **동일한 실험실 조건**에서 촬영되었습니다. 기존 모델들의 비정상적으로 높은 mAP는 '알약의 특징을 학습한 결과'가 아니라, **'특정 실험실의 픽셀 패턴을 암기한 결과'**였습니다.
 
-![환경적 편향 메타데이터 검증: 모든 데이터의 배경 및 조명 고유값이 1개뿐임을 증명](/assets/images/projects/pill-detection/metadata-check.png)
-<br>
-
 ---
 
 ## 6. 디버깅 및 트러블슈팅: 지름길 학습(Shortcut Learning) 꼼수 규명
