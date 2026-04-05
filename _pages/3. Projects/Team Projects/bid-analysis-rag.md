@@ -77,6 +77,9 @@ order: 2
 ### 4.1 프로젝트 구조화 및 데이터 보완
 
 *   **Project ID 체계 도입 (Normalization)**: 불규칙한 공고 번호 대신 `001`, `002`와 같은 고유한 **Project ID 폴더 체계**를 새롭게 구축했습니다. 이를 통해 중구난방이었던 수백 개의 파일에 명확한 계층 구조를 부여하고 파이프라인의 자동화를 실현했습니다.
+
+![Project ID 기반 데이터 폴더 구조: 각 사업단위(Proj_ID)별로 공고문, 제안요청서, 과업지시서를 통합 관리](/assets/images/projects/bid-analysis-rag/project-structure.png)
+<br>
 *   **멀티 문서 퓨전 (Multi-Document Fusion)**: 
     *   **제안요청서 (RFP)**: 사업의 세부 요구사항 및 기술 스펙
     *   **입찰공고문 (Notice)**: 공식적인 예산 대가와 정확한 마감일 정보
@@ -111,6 +114,14 @@ Upstage Document API를 이용해 PDF문서들을 Markdown으로 1차 파싱 변
 *   **현상 (섹션 데드존 발견)**: 특히 특정 챕터(장) 하나가 **12.2만 자(약 6.1만 토큰)**에 달하는 **'거대 섹션 블라인드 스팟'**을 발견했습니다. 단순히 헤더로만 자를 경우, 한 청크가 임베딩 한도를 넘어 검색이 불가능해지므로 재귀적 청킹이 필수적임을 도출했습니다.
 *   **엔지니어링 돌파 (Recursive Chunking & Optimized Overlap)**:
     *   **헤더 전수 조사**: 254개 파일의 제목 패턴을 통계 낸 결과, 불릿 포인트(69%), "1." 형식(15.3%), "가." 형식(4.4%) 순으로 나타났습니다. 이 데이터를 바탕으로 `fix_upstage_headers` 파이프라인을 구축하여 H1~H4 계층을 완벽히 복원했습니다.
+
+![헤더 패턴 빈도 분석: Upstage 파싱 결과에서 추출된 주요 제목 패턴 통계](/assets/images/projects/bid-analysis-rag/header-regex-analysis.png)
+<br>
+
+Upstage Document Parse는 기본적으로 대제목(H1) 위주로 구조를 파악하는 경향이 있어, 상세 계층(H2~H4)이 일반 텍스트나 불릿으로 뭉개지는 현상이 있었습니다. 저는 이를 해결하기 위해 **8,767개의 제목 패턴을 전수 조사**하여 상위 3개 패턴(88.7%)만 복원해도 문서의 핵심 구조가 살아난다는 것을 규명했습니다.
+
+![H1~H4 계층 복원 로직: 정규표현식을 활용해 텍스트 패턴별로 적절한 마크다운 헤더를 재할당하는 커스텀 스크립트](/assets/images/projects/bid-analysis-rag/header-logic-code.png)
+<br>
     *   **하이브리드 이중 청킹 (Hybrid Chunking)**: 복원된 헤더 기준 `MarkdownHeaderTextSplitter` + 내부 `RecursiveCharacterTextSplitter` 전략을 채택했습니다.
         *   **Chunk Size (1,500자)**: 한글 Token/Char 비율(약 0.88) 역산을 통해 정보 밀도를 극대화했습니다.
         *   **Chunk Overlap (500자)**: 문서 내 **표의 평균 길이(1,860자)**를 고려하여, 분할 시에도 맥락이 유지되도록 overlap을 500자로 공학적으로 설정했습니다. (재현율 Recall 극대화)
