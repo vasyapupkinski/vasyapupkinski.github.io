@@ -5,7 +5,7 @@ category: "3. Projects / Team Projects"
 order: 1
 ---
 
-# 헬스잇(Health Eat) — 알약 검출 AI 진단 최적화
+# 알약 검출 AI 진단 최적화
 
 > **"높은 mAP는 의심을 해봐야 한다"**
 
