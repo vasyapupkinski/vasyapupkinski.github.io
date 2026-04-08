@@ -16,7 +16,7 @@ order: 3
 | 항목 | 내용 |
 |---|---|
 | **프로젝트** | 제품 사진 1장으로 기획부터 최종 광고 이미지까지 자동 생성하는 End-to-End AI 서비스 |
-| **나의 역할** | **팀장(PM) — AI Core System 아키텍처 설계 및 오케스트레이션 총괄** |
+| **나의 역할** | **팀장 — AI Core System 아키텍처 설계 및 오케스트레이션 총괄** |
 | **핵심 성과** | 5단계 이미지 파이프라인 자동화, VRAM 최적화로 생성 속도 **77% 단축**, 77-Token 컨덴서 및 지능형 디자인 컴포저 구축 |
 | **최종 스택** | FLUX.1-Fill (NF4), BiRefNet, Real-ESRGAN, T5-Tokenizer, FastAPI, Redis, Celery |
 
@@ -57,21 +57,16 @@ order: 3
 프로젝트의 핵심은 단순히 이미지를 생성하는 것이 아니라, 기획부터 렌더링까지 이어지는 **'상용 수준의 제작 공정'**을 구축하는 것이었습니다.
 
 ### Architecture Overview
-```mermaid
-flowchart LR
-    UI["Next.js UI<br/>Canvas Editor"] --> API["FastAPI API Server"]
-    API --> Director["Director / State Manager"]
-    Director --> Planner["Planner / Designer LLM"]
-    Director --> Segmenter["Segmenter<br/>BiRefNet"]
-    Segmenter --> Flux["Background Generation<br/>FLUX.1-Fill"]
-    Flux --> Upscaler["Upscaler<br/>Real-ESRGAN"]
-    Upscaler --> Color["ColorMaster"]
-    Color --> Designer["AdDesigner<br/>Text / Shape Overlay"]
-    Designer --> Output["Manifest + Rendered Assets"]
-```
+
+![전체 시스템 아키텍처](/assets/images/projects/adgen/architecture.png)
+*Next.js 프론트엔드부터 비동기 Celery 워커, Singleton 기반 VRAMHandler까지 이어지는 전체 시스템 구조*
 
 ### 5-Stage Image Synthesis Pipeline
 개별 이미지 생성은 다음의 5단계를 거쳐 정밀하게 통제됩니다.
+
+![실제 사용 시나리오 및 파이프라인 흐름](/assets/images/projects/adgen/pipeline_flow.png)
+*사용자의 정성적 요청(프롬프트)이 시스템 가드레일을 거쳐 최종 엔진 체인까지 전달되는 흐름*
+
 1.  **Segmenter (BiRefNet)**: 제품 객체 추출 및 기하학적 분석.
 2.  **FluxEngine (Generative)**: NF4 양자화된 FLUX.1을 통한 배경 생성 및 제품 합성.
 3.  **Upscale (Real-ESRGAN)**: 저해상도(NF4) 생성물을 4K 수준으로 품질 보정.
@@ -80,6 +75,10 @@ flowchart LR
 
 ### Director-Centric Orchestration
 전체 워크플로우는 `Director & State Manager`에 의해 제어됩니다.
+
+![호출 구조 및 2단계 프롬프트 전략](/assets/images/projects/adgen/call_strategy.png)
+*Planner(전역 기획)와 Designer(상세 설계)로 역할을 분리하여 환각을 억제하는 에이전트 오케스트레이션*
+
 *   **기획과 생성의 물리적 분리**: 생성 이전에 '디자인 명세서(Manifest)'를 선발행하여, 전체 프로세스를 다시 돌리지 않고 **특정 페이지나 레이어만 재생성**할 수 있는 실무형 구조를 구현했습니다.
 *   **단계별 계측(Observability)**: 모든 공정에 `PerformanceTimer`를 도입하여, 병목 구간을 정량적으로 계측하고 최적화 우선순위를 잡았습니다.
 
@@ -129,8 +128,18 @@ LLM이 정밀한 픽셀 좌표를 산출하지 못하는 'Spatial Awareness' 부
 
 ### 10.3 Context & Semantic Isolation (맥락 및 의미론적 격리)
 *   **[Hallucination Suppression]**: 상세페이지의 여러 에셋을 생성할 때 발생하기 쉬운 LLM의 '기억 소실'이나 '환각'을 방지하기 위해 역할을 격리했습니다. AI가 전체 맥락을 잃지 않고 특정 세션 동안 브랜드 톤을 고수하도록 **에피소드 메모리(Episode Memory)**와 연동된 격리된 추론 환경을 제공합니다.
-*   **[Semantic Isolation]**: AI의 '자율 최적화(Self-Optimization)' 오류를 방지하기 위해 역할을 분리했습니다. AI는 "배치 컨셉"만 결정하고, 실제 섬세한(Delicate) 좌표 조정은 시스템이 보유한 기하학적 블루프린트가 수행하도록 설계하여 시각적 완성도를 타협하지 않았습니다.
 *   **[Context Isolation]**: 광고 카피에 배경 묘사가 섞여 들어가는 실수를 방지하기 위해 프롬프트 레벨에서 정보의 성격을 명확히 분리하는 규칙을 삽입했습니다.
+
+### 10.4 Agentic Control & Harness Engineering (프롬프트의 수치 제어)
+
+![Planner 및 Designer 프롬프트 전략](/assets/images/projects/adgen/prompt_strategy.png)
+*Planner와 Designer 에이전트의 실제 프롬프트 구조와 Aesthetic/Physical 지능 제어 원문*
+
+단순한 텍스트 생성을 넘어, LLM 프롬프트가 시스템의 정량적 수치를 직접 제어하는 **'Agentic Control'** 구조를 구축했습니다.
+
+*   **Aesthetic Intelligence Mapping**: LLM이 프롬프트를 통해 분석한 감성에 맞춰 `contrast`, `saturation`, `warmth` 등의 색보정 수치를 소수점 단위로 결정합니다. 이 값은 `ColorMaster` 엔진의 실제 파라미터로 실시간 매핑되어 픽셀 보정에 반영됩니다.
+*   **Geometric Translation Guard**: AI의 정성적 의도(예: "우측 하단 여백 활용")를 시스템이 실시간 픽셀 좌표(`x`, `y`, `scale`)로 변환합니다. 이때 제품이 캔버스 밖으로 이탈하지 않도록 **Safe Margin** 및 **Physical Clamping** 가드레일을 적용했습니다.
+*   **Harness Engineering (JSON Sanitizer)**: LLM의 비정형 응답( halluciation )이나 오타(`sixty` -> `60`)를 정규표현식으로 실시간 정제하는 하네스 계층을 구축하여, AI의 불확실성이 시스템 전체의 크래시로 이어지지 않도록 설계했습니다.
 
 ---
 
