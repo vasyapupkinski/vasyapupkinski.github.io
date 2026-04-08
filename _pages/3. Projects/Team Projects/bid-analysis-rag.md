@@ -279,8 +279,7 @@ RAG의 두뇌 역할을 할 LLM을 결정하기 위해 최신 오픈소스 모�
 > | 봉화군 재난통합관리시스템 고도화 사업(협상) | 경상북도 봉화군 | 900,000,000원 | 2024-04-30 | (proj_005_chk_0149) |
 > 
 
-
-![Case 1 RAG 파이프라인 실시간 실행 로그](/assets/images/projects/bid-analysis-rag/evaluation-trace-q02.png)
+<img src="/assets/images/projects/bid-analysis-rag/evaluation-trace-q02.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
 <br>
 
 > [!NOTE]
@@ -322,8 +321,7 @@ RAG의 두뇌 역할을 할 LLM을 결정하기 위해 최신 오픈소스 모�
 > - "기존 시스템과의 연계 방식이 REST API인지 DB 직접 연동인지 명확한 확인이 필요합니다."
 > 
 
-
-![Case 2 RAG 파이프라인 실시간 실행 로그](/assets/images/projects/bid-analysis-rag/evaluation-trace-q03.png)
+<img src="/assets/images/projects/bid-analysis-rag/evaluation-trace-q03.png" width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
 <br>
 
 > [!NOTE]
