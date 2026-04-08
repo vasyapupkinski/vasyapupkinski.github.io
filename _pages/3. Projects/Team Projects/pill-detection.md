@@ -391,6 +391,6 @@ Phase 3에서 드러난 이 치명적인 결함들에 대해, 팀장으로서 �
 
 ---
 
-## 📎 관련 링크
+## 관련 링크
 
 - [GitHub 전용 리포지토리](https://github.com/vasyapupkinski/codeitteam7_Pill-Detection-AI-Diagnostic-Optimization)
