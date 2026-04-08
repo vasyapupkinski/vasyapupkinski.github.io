@@ -22,8 +22,7 @@ order: 3
 
 ---
 
-![AdGen 시스템 아키텍처: 사용자 요청부터 최종 광고 이미지 생성까지의 5단계 오케스트레이션 흐름도](/assets/images/projects/adgen/architecture-flow.png)
-<br>
+
 
 ---
 
