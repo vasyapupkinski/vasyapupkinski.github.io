@@ -9,6 +9,9 @@ order: 3
 
 > **"AI의 핵심은 모델 자체보다, 이를 유기적으로 연결하여 실전 가치를 만드는 시스템(Harness)에 있다"**
 
+![생성 결과물 전시장](/assets/images/projects/adgen/showcase.png)
+*FLUX.1-Fill과 지능형 레이아웃 엔진이 결합되어 생성된 다양한 카테고리의 실제 광고물 예시*
+
 ---
 
 ## TL;DR
@@ -140,6 +143,20 @@ LLM이 정밀한 픽셀 좌표를 산출하지 못하는 'Spatial Awareness' 부
 *   **Aesthetic Intelligence Mapping**: LLM이 프롬프트를 통해 분석한 감성에 맞춰 `contrast`, `saturation`, `warmth` 등의 색보정 수치를 소수점 단위로 결정합니다. 이 값은 `ColorMaster` 엔진의 실제 파라미터로 실시간 매핑되어 픽셀 보정에 반영됩니다.
 *   **Geometric Translation Guard**: AI의 정성적 의도(예: "우측 하단 여백 활용")를 시스템이 실시간 픽셀 좌표(`x`, `y`, `scale`)로 변환합니다. 이때 제품이 캔버스 밖으로 이탈하지 않도록 **Safe Margin** 및 **Physical Clamping** 가드레일을 적용했습니다.
 *   **Harness Engineering (JSON Sanitizer)**: LLM의 비정형 응답( halluciation )이나 오타(`sixty` -> `60`)를 정규표현식으로 실시간 정제하는 하네스 계층을 구축하여, AI의 불확실성이 시스템 전체의 크래시로 이어지지 않도록 설계했습니다.
+
+---
+
+## 6. Project Demo: "The Generation in Action"
+
+상용 수준의 생성 속도와 레이어 편집 기능을 시연하는 실제 구동 영상입니다.
+
+````carousel
+<video src="/assets/images/projects/adgen/New151-web.mp4" controls width="100%"></video>
+<!-- slide -->
+<video src="/assets/images/projects/adgen/New121-web.mp4" controls width="100%"></video>
+<!-- slide -->
+<video src="/assets/images/projects/adgen/New131-web.mp4" controls width="100%"></video>
+````
 
 ---
 
