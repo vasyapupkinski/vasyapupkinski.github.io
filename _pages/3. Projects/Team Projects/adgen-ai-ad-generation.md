@@ -150,13 +150,11 @@ LLM이 정밀한 픽셀 좌표를 산출하지 못하는 'Spatial Awareness' 부
 
 상용 수준의 생성 속도와 레이어 편집 기능을 시연하는 실제 구동 영상입니다.
 
-````carousel
-<video src="/assets/images/projects/adgen/New151-web.mp4" controls width="100%"></video>
-<!-- slide -->
-<video src="/assets/images/projects/adgen/New121-web.mp4" controls width="100%"></video>
-<!-- slide -->
-<video src="/assets/images/projects/adgen/New131-web.mp4" controls width="100%"></video>
-````
+<div style="display: flex; flex-direction: column; gap: 20px;">
+    <video src="/assets/images/projects/adgen/New151-web.mp4" controls width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"></video>
+    <video src="/assets/images/projects/adgen/New121-web.mp4" controls width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"></video>
+    <video src="/assets/images/projects/adgen/New131-web.mp4" controls width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"></video>
+</div>
 
 ---
 
