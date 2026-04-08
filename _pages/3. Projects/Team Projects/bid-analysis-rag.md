@@ -280,8 +280,11 @@ RAG의 두뇌 역할을 할 LLM을 결정하기 위해 최신 오픈소스 모�
 > 
 
 
-![Case 1 시스템 실행 로그](/assets/images/projects/bid-analysis-rag/evaluation-trace-q02.png)
+![Case 1 RAG 파이프라인 실시간 실행 로그](/assets/images/projects/bid-analysis-rag/evaluation-trace-q02.png)
 <br>
+
+> [!NOTE]
+> **RAG Pipeline Trace**: 실제 시스템이 질문을 처리하며 임베딩(Embedding) API를 호출하고, 관련 사업 정보를 소스 코드와 매칭하여 추출하는 실시간 실행 과정을 보여줍니다.
 
 #### LLM-as-a-Judge (G-Eval) 평가 결과
 시스템의 응답 신뢰도를 객관적으로 검증하기 위해, **'입찰 전문 평가 모델'** 페르소나를 가진 별도의 LLM을 통해 평가를 수행했습니다.
@@ -320,8 +323,11 @@ RAG의 두뇌 역할을 할 LLM을 결정하기 위해 최신 오픈소스 모�
 > 
 
 
-![Case 2 시스템 실행 로그](/assets/images/projects/bid-analysis-rag/evaluation-trace-q03.png)
+![Case 2 RAG 파이프라인 실시간 실행 로그](/assets/images/projects/bid-analysis-rag/evaluation-trace-q03.png)
 <br>
+
+> [!NOTE]
+> **RAG Pipeline Trace**: 특정 사업에 대한 심층 분석 요청 시, 시스템이 관련 섹션을 탐색하고 입찰 전략 수립을 위한 핵심 도메인 지식을 추출해내는 과정을 확인할 수 있습니다.
 
 #### LLM-as-a-Judge (G-Eval) 평가 결과
 Case 2의 심층 분석 결과에 대해 수행된 G-Eval 결과, **종합 5.0점(만점)**을 기록했습니다.
