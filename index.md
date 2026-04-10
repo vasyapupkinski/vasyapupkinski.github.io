@@ -14,7 +14,7 @@ home: true
 ## 01. What I Can Do
 **이런 일을 할 수 있습니다**
 
-*   **데이터 중심 오디팅 (Data-Centric Auditing)**: mAP 0.99의 허구성을 파헤치고 840개의 라벨 오류를 전수 복구하는 데이터 무결성 확보 능력을 갖췄습니다.
+*   **데이터 중심 오디팅 (Data-Centric Auditing)**: mAP 0.99의 지표 왜곡 원인을 분석하고 840개의 라벨 오류를 전수 복구하는 데이터 무결성 확보 능력을 갖췄습니다.
 *   **문서 처리형 RAG 설계 (Document-Retrieval RAG)**: 비정형 HWP/PDF 문서 파싱 및 하이브리드 검색 레이어 설계를 통해 신뢰도 높은 정보 추출 시스템을 구축합니다.
 *   **에이전틱 워크플로우 (Agentic Workflow)**: Planner-Designer 이중화 및 Failover 구조를 설계해 예외 대응이 가능한 지능형 자동화 흐름을 만듭니다.
 *   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4/INT8 양자화 적용 및 ONNX 가속 파이프라인 설계를 통해 제한된 리소스에서도 실무 가능한 수준의 서비스 추론 성능을 구현합니다.
@@ -27,8 +27,8 @@ home: true
 | **Project** | **Team & Role** | **Period** | **Technical Highlights & Results** |
 | :--- | :--- | :--- | :--- |
 | [**AdGen 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/adgen.html) | **팀장 (AI Core)**<br>4인 (2인 이탈) | 26.01.30 ~<br>26.02.27 | **계층형 오케스트레이션으로 품질 제어**<br>VRAM 최적화 및 스테이징 설계로 이미지 생성 속도 **77% 단축** |
-| [**Bid-Analysis Agentic RAG 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/bid-analysis-rag.html) | **팀장 (Arch/PM)**<br>4인 | 25.12.10 ~<br>26.01.05 | **비정형 노이즈 정제에 몰입, 텍스트 이원화로 정밀도 극대화**<br>사용자 목적 기반 필터링 및 메타데이터 활용으로 **수치 오류율 0%** 달성 |
-| [**Pill-Detection 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/pill-detection.html) | **팀장 (PM/EDA)**<br>5인 | 25.10.20 ~<br>25.11.05 | **의미 없는 점수 경쟁 대신 과적합의 원인(Leakage) 규명에 집중**<br>840개 오염 라벨 복구 및 HSV 변인 통제로 **실제 현장용 mAP 0.98** 확보 |
+| [**Bid-Analysis Agentic RAG 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/bid-analysis-rag.html) | **팀장 (Arch/PM)**<br>4인 | 25.12.10 ~<br>26.01.05 | **비정형 문서의 구조적 파싱 및 검색-생성 이원화로 답변 신뢰도 확보**<br>표 구조 복원(Grid Expansion) 및 메타데이터 정규화로 입찰 핵심 정보의 추출 정합성 강화 |
+| [**Pill-Detection 🔗**]({{ site.baseurl }}/3. Projects/Team Projects/pill-detection.html) | **팀장 (PM/EDA)**<br>5인 | 25.10.20 ~<br>25.11.05 | **단순 지표 경쟁보다 과적합의 원인(Leakage) 규명에 집중**<br>840개 오염 라벨 복구 및 HSV 변인 통제로 신뢰 가능한 수준의 **실제 mAP 0.98** 확보 |
 
 ---
 
