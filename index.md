@@ -17,7 +17,7 @@ home: true
 *   **데이터 중심 오디팅 (Data-Centric Auditing)**: mAP 0.99의 허구성을 파헤치고 840개의 라벨 오류를 전수 복구하는 데이터 무결성 확보 능력을 갖췄습니다.
 *   **문서 처리형 RAG 설계 (Document-Retrieval RAG)**: 비정형 HWP/PDF 문서 파싱 및 하이브리드 검색 레이어 설계를 통해 신뢰도 높은 정보 추출 시스템을 구축합니다.
 *   **에이전틱 워크플로우 (Agentic Workflow)**: Planner-Designer 이중화 및 Failover 구조를 설계해 예외 대응이 가능한 지능형 자동화 흐름을 만듭니다.
-*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4 양자화 및 ONNX 가속을 통해 실제 운영 환경에서의 서비스 안정성과 속도를 확보합니다.
+*   **실무형 AI 서빙 및 최적화 (Operational Serving)**: NF4/INT8 양자화 적용 및 ONNX 가속 파이프라인 설계를 통해 제한된 리소스에서도 실무 가능한 수준의 서비스 추론 성능을 구현합니다.
 
 ---
 
