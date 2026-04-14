@@ -656,3 +656,16 @@ main {
 .top-arrow { left:calc(50vw + #{$contentwd}/2 - 4rem); }
 
 }
+// Global stabilization for tech badges
+img[src*='shields.io'],
+img[src*='badge'],
+li img {
+  display: inline-block !important;
+  width: auto !important;
+  height: 24px !important;
+  margin: 2px 4px !important;
+  vertical-align: middle !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
