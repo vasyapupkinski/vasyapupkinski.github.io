@@ -27,12 +27,24 @@
     width:100%;
     margin:auto;
   }
-  .skill-list img, .tech-badges img {
-    display:inline-block !important;
-    width:auto !important;
-    height:25px !important;
-    margin:0 4px !important;
-    vertical-align:middle !important;
+  .skill-list, .tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem !important;
+    
+    img, p {
+      display: inline-block !important;
+      width: auto !important;
+      margin: 0 !important;
+      vertical-align: middle !important;
+    }
+
+    p { margin-bottom: 0 !important; }
+
+    img {
+      height: 25px !important;
+    }
   }
   .img-xs { width:12.5% !important; }
   .img-sm { width:25% !important; }
