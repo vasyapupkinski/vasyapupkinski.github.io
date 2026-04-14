@@ -28,37 +28,34 @@
     margin:auto;
   }
   .skill-list, .tech-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin: 1.5rem auto 2.5rem !important;
-    text-align: center;
-    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 8px 12px !important;
+    margin: 1rem 0 2rem !important;
+    width: 100% !important;
+    text-align: left !important;
     
     p {
       display: flex !important;
       flex-wrap: wrap !important;
-      justify-content: center !important;
+      justify-content: flex-start !important;
       align-items: center !important;
-      gap: 12px !important;
+      gap: 8px 12px !important;
       margin: 0 !important;
+      padding: 0 !important;
       width: 100% !important;
-      text-align: center !important;
+      text-align: left !important;
     }
 
     img {
       display: inline-block !important;
       width: auto !important;
-      height: 28px !important;
+      height: 24px !important;
       margin: 0 !important;
       vertical-align: middle !important;
-      transition: transform 0.2s ease-in-out;
-
-      &:hover {
-        transform: scale(1.05);
-      }
+      border-radius: 4px !important;
     }
   }
   .img-xs { width:12.5% !important; }
