@@ -1,13 +1,17 @@
 ---
 layout: page
-title: "Bid Analysis Agentic RAG: 데이터 무결성을 향한 기술적 감찰"
+title: "Bid Analysis Agentic RAG: 비정형 데이터 정합성 강화 및 자율 교정 답변 생성"
 category: "3. Projects / Team Projects"
 order: 2
 ---
 
-# 입찰 공고 분석 Agentic RAG
+# Bid Analysis Agentic RAG: 비정형 데이터 정합성 강화 및 자율 교정 답변 생성
 
-> **"오염된 메타데이터는 치명적인 할루시네이션을 부른다"**
+> **데이터 무결성 검증과 구조적 파싱을 통한 입찰 문서 정보 추출 시스템**
+
+### Tech Stack
+
+![LangGraph](https://img.shields.io/badge/LangGraph-black?style=flat-square&logo=langchain) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![Upstage](https://img.shields.io/badge/Upstage%20Document%20Parse-6100FF?style=flat-square&logo=huggingface) ![Qdrant](https://img.shields.io/badge/Qdrant-FF4B4B?style=flat-square&logo=qdrant&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white) ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat-square&logo=python&logoColor=white) ![BAAI Reranker](https://img.shields.io/badge/BAAI%20Reranker-FF6F00?style=flat-square&logoColor=white)
 
 ---
 
@@ -215,13 +219,9 @@ RAG의 두뇌 역할을 할 LLM을 결정하기 위해 최신 오픈소스 모�
 
 ---
 
-## 10. 맺음말 및 프로젝트 회고: "데이터의 바닥에서 찾은 정답"
+## 10. 맺음말 및 프로젝트 회고
 
-현대 RAG 시스템의 성능은 고도의 모델 튜닝보다 **'파싱된 텍스트의 무결성'**에서 결정된다는 것을 이번 프로젝트를 통해 데이터로 증명했습니다. 100개 문서를 전수 조사하며 발견한 **'모아찍기 레이아웃 붕괴'**나 **'12만 자 거대 섹션(Dead Zone)'**과 같은 현장의 한계들을 외면하지 않고, 직접 전처리 스크립트로 정면 돌파했습니다.
-
-**"남들이 프롬프트 한 줄을 고칠 때, 나는 12만 자짜리 거대 섹션과 레이아웃 붕괴라는 데이터의 사각지대(EDA)에 숨은 문제를 찾아내어 해결했다."**
-
-이 수치와 논리들은 저에게 "가장 세련된 AI의 결과물 뒤에는, 데이터의 바닥을 끈질기게 추적한 엔지니어의 EDA 근거가 숨어있다"는 소중한 교훈을 남겼습니다.
+RAG 시스템의 성능은 모델 튜닝보다 **파싱된 텍스트의 무결성**에서 결정된다는 것을 데이터로 확인한 프로젝트입니다. 100개 문서를 전수 조사하며 발견한 **모아찍기 레이아웃 붕괴**나 **12만 자 거대 섹션(Dead Zone)** 등의 현장 한계들을 전처리 스크립트로 해결했습니다.
 
 ---
 
@@ -252,13 +252,13 @@ RAG의 두뇌 역할을 할 LLM을 결정하기 위해 최신 오픈소스 모�
 
 ### 기술적 교훈
 
-1. **"AI의 본질은 데이터에 있다"** — 저는 데이터야말로 AI의 성패를 결정하는 가장 핵심적인 요소중 하나라고 믿습니다. 이번 프로젝트에서도 단순히 모델의 파라미터를 조정하는 것보다, **데이터를 철저히 EDA 하고 정제하는 것**에 가장 많은 에너지를 쏟았습니다. 데이터를 깊게 뜯어보는 과정에서 비로소 '모아찍기 레이아웃 붕괴'나 '12만 자 섹션 데드존' 같은 실전적인 문제점들이 보였고, 이는 곧 프로젝트의 성공을 결정짓는 기술적 방향타가 되었습니다.
+1. **데이터 품질이 RAG 성능을 결정한다** — 모델의 파라미터를 조정하는 것보다, **데이터를 철저히 분석하고 정제하는 것**에 가장 많은 에너지를 투입했습니다. '모아찍기 레이아웃 붕괴'나 '12만 자 섹션 데드존' 같은 실전적인 문제들은 데이터를 깊게 분석하는 과정에서 확인되었고, 이것이 프로젝트 성공의 핵심 기술적 방향이 되었습니다.
 
-2. **"똑똑한 LLM에게 필요한 것은 고품질의 '떠먹여 주는' 데이터다"** — 이제 LLM은 이미 충분하다 못해 차고 넘칠 정도로 똑똑합니다. 이렇게 똑똑한 모델에게 우리가 해야 할 일은 그저 **좋은 데이터를 잘 정제해서 이해하기 쉬운 형태로 전달하는 것**임을 깨달았습니다. RAG의 성능 역시 화려한 튜닝보다는, 전처리 단계에서의 '데이터 순도'를 얼마나 확보하느냐에 달려 있다는 것을 다시 한번 확인했습니다.
+2. **고품질 데이터의 중요성** — LLM의 성능이 충분한 현 시점에서, RAG의 성능은 전처리 단계의 '데이터 순도'를 얼마나 확보하느냐에 달려 있음을 확인했습니다.
 
-### 리더십 및 도메인 인사이트
+### 협업 및 도메인 인사이트
 
-3. **도메인 인터뷰의 중요성** — 기술적 구현에 앞서 도메인 전문가(팀원)와의 심층 인터뷰를 진행한 것이 프로젝트의 성격을 '단순 질문 답변기'에서 '데이터 무결성 검증 에이전트'로 진화시킨 결정적 계기가 되었습니다. **현장의 페인 포인트(Pain Point)를 정확히 짚어내는 것이 기술적 해결책보다 우선**되어야 함을 배웠습니다.
+3. **도메인 인터뷰의 중요성** — 기술적 구현에 앞서 도메인 전문가(팀원)와의 심층 인터뷰를 진행한 것이 프로젝트를 '데이터 무결성 검증 에이전트'로 전환시키는 계기가 되었습니다. 현장의 페인 포인트를 정확히 파악하는 것이 기술적 해결책보다 우선되어야 함을 배웠습니다.
 
 ---
 
