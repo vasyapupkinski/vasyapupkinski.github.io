@@ -27,36 +27,23 @@
     width:100%;
     margin:auto;
   }
-  .skill-list, .tech-badges {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    gap: 8px 12px !important;
-    margin: 1rem 0 2rem !important;
-    width: 100% !important;
-    text-align: left !important;
-    
-    p {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: flex-start !important;
-      align-items: center !important;
-      gap: 8px 12px !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      width: 100% !important;
-      text-align: left !important;
-    }
+  // Tech Badge Stabilization
+  // Targets badges in lists and any shields.io badges to override 100% width
+  li img,
+  img[src*="img.shields.io"] {
+    display: inline-block !important;
+    width: auto !important;
+    height: 24px !important;
+    margin: 2px 4px !important;
+    vertical-align: middle !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
 
-    img {
-      display: inline-block !important;
-      width: auto !important;
-      height: 24px !important;
-      margin: 0 !important;
-      vertical-align: middle !important;
-      border-radius: 4px !important;
-    }
+  .tech-badges {
+    display: block !important;
+    margin: 1rem 0 !important;
+    text-align: left !important;
   }
   .img-xs { width:12.5% !important; }
   .img-sm { width:25% !important; }

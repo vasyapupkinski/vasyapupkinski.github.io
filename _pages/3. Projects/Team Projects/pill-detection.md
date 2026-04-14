@@ -11,11 +11,7 @@ order: 1
 
 ### Tech Stack
 
-<div class="tech-badges" markdown="1">
-
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat-square&logo=ultralytics&logoColor=black) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![Roboflow](https://img.shields.io/badge/Roboflow-7601FF?style=flat-square&logo=roboflow&logoColor=white) ![Albumentations](https://img.shields.io/badge/Albumentations-FF6F00?style=flat-square&logoColor=white)
-
-</div>
 
 ---
 
