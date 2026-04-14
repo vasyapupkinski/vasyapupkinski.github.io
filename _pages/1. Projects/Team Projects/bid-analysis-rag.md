@@ -228,22 +228,22 @@ RAG 시스템의 성능은 모델 튜닝보다 **파싱된 텍스트의 무결�
 ## 11. 프로젝트 구조
 
 ```text
-📦 Bid-Analysis-RAG-System
-├── 📂 agent                      # LangGraph 워크플로우 및 노드 정의
-├── 📂 config                     # 프롬프트 및 시스템 설정
-├── 📂 data                       # 원본 공고 문서 (Project ID 폴더 체계)
-├── 📂 embedding                  # 임베딩 모델 핸들러
-├── 📂 filtering                  # 메타데이터 기반 사전 필터링 로직
-├── 📂 llm                        # GPT-5-mini 등 추론 모델 인터페이스
-├── 📂 reranking                  # BAAI Reranker 통합 로직
-├── 📂 retrieval                  # 하이브리드 검색엔진 구현체
-├── 📂 utils                      # 텍스트 전처리(Grid Expansion 등) 유틸리티
-├── 📂 vectorstore                # Qdrant 연결 및 관리
-├── 📂 web_search                 # DuckDuckGo 웹 검색 폴백 모듈
-├── 📂 시나리오 B 완성된 쥬피터 파일들  # 핵심 EDA 및 실험 결과물 (ipynb)
-├── 📄 main.py                    # 서비스 실행 메인 스크립트
-├── 📄 app_simple.py              # 간이 테스트용 애플리케이션
-└── 📄 README.md
+Bid-Analysis-RAG-System
+├── agent                      # LangGraph 워크플로우 및 노드 정의
+├── config                     # 프롬프트 및 시스템 설정
+├── data                       # 원본 공고 문서 (Project ID 폴더 체계)
+├── embedding                  # 임베딩 모델 핸들러
+├── filtering                  # 메타데이터 기반 사전 필터링 로직
+├── llm                        # GPT-5-mini 등 추론 모델 인터페이스
+├── reranking                  # BAAI Reranker 통합 로직
+├── retrieval                  # 하이브리드 검색엔진 구현체
+├── utils                      # 텍스트 전처리(Grid Expansion 등) 유틸리티
+├── vectorstore                # Qdrant 연결 및 관리
+├── web_search                 # DuckDuckGo 웹 검색 폴백 모듈
+├── 시나리오 B 완성된 쥬피터 파일들  # 핵심 EDA 및 실험 결과물 (ipynb)
+├── main.py                    # 서비스 실행 메인 스크립트
+├── app_simple.py              # 간이 테스트용 애플리케이션
+└── README.md
 ```
 
 ---

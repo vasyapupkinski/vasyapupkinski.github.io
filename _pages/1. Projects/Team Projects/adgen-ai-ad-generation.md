@@ -169,15 +169,15 @@ FLUX와 같은 거대 모델을 24GB VRAM 내에서 상주시키는 방법, LLM�
 ## 8. 프로젝트 구조
 
 ```text
-📦 AdGen-AI-Ad-Generation
-├── 📂 app/api_server            # FastAPI 기반 통합 API 레이어
-├── 📂 app/frontend              # Next.js 14 & Konva.js 캔버스 편집기
-├── 📂 core/orchestrator         # Director Pattern 기반 5-Stage 파이프라인 제어
-├── 📂 core/generators           # CreativeDirector (2단계 LLM 기획 엔진)
-├── 📂 core/resource_manager     # VRAMHandler (Singleton GPU 최적화)
-├── 📂 core/engines/vision       # BiRefNet 세그멘테이션 및 기하학 분석
-├── 📂 core/engines/generation   # FLUX.1-Fill 배경 생성 및 렌더링 엔진
-└── 📄 README.md
+AdGen-AI-Ad-Generation
+├── app/api_server            # FastAPI 기반 통합 API 레이어
+├── app/frontend              # Next.js 14 & Konva.js 캔버스 편집기
+├── core/orchestrator         # Director Pattern 기반 5-Stage 파이프라인 제어
+├── core/generators           # CreativeDirector (2단계 LLM 기획 엔진)
+├── core/resource_manager     # VRAMHandler (Singleton GPU 최적화)
+├── core/engines/vision       # BiRefNet 세그멘테이션 및 기하학 분석
+├── core/engines/generation   # FLUX.1-Fill 배경 생성 및 렌더링 엔진
+└── README.md
 ```
 
 ---

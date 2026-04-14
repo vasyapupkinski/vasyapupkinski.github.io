@@ -351,29 +351,29 @@ master_data = defaultdict(lambda: {
 ## 11. 프로젝트 구조
 
 ```
-📦 Pill-Detection-AI-Diagnostic-Optimization
-├── 📂 docs/
-│   ├── 📄 pill-detection.md              # 본 문서 (프로젝트 전체 기록)
-│   ├── 📄 Pill_Dataset_Audit_Report.md    # 데이터 무결성 감사 보고서
-│   └── 📄 내부_실험_보고서.pdf              # 팀 공식 실험 보고서
-├── 📂 config/
-│   └── 📄 default.yaml                   # YOLO 학습 설정
-├── 📂 img/                               # 시각화 이미지
-├── 📂 notebooks/
-│   ├── 📓 01_EDA.ipynb                   # 탐색적 데이터 분석
-│   └── 📓 02_Model_Baseline.ipynb        # 모델 베이스라인
-├── 📂 src/                               # 실행 소스 코드
-│   ├── 📂 preprocessing/                 # 전처리 파이프라인
-│   └── 📂 utils/                         # 유틸리티
-├── 📂 legacy/                            # 초기 실험 노트북
-│   ├── 📓 EDA3.ipynb                     # 심층 EDA (이승완 + 박병호)
-│   ├── 📓 final_exp.ipynb                # 최종 실험
-│   └── 📓 initial_data_analysis.ipynb    # 초기 데이터 분석 (이승완)
-├── 📂 team_src/                          # 팀원 개별 실험
-│   ├── 📓 best_model_test.ipynb          # 최고 성능 모델 테스트
-│   └── 📓 시각화.ipynb                    # 결과 시각화
-├── 📄 class_metadata_uniqueness_analysis.csv  # 클래스별 메타데이터 고유성
-└── 📄 README.md
+Pill-Detection-AI-Diagnostic-Optimization
+├── docs/
+│   ├── pill-detection.md              # 본 문서 (프로젝트 전체 기록)
+│   ├── Pill_Dataset_Audit_Report.md    # 데이터 무결성 감사 보고서
+│   └── 내부_실험_보고서.pdf              # 팀 공식 실험 보고서
+├── config/
+│   └── default.yaml                   # YOLO 학습 설정
+├── img/                               # 시각화 이미지
+├── notebooks/
+│   ├── 01_EDA.ipynb                   # 탐색적 데이터 분석
+│   └── 02_Model_Baseline.ipynb        # 모델 베이스라인
+├── src/                               # 실행 소스 코드
+│   ├── preprocessing/                 # 전처리 파이프라인
+│   └── utils/                         # 유틸리티
+├── legacy/                            # 초기 실험 노트북
+│   ├── EDA3.ipynb                     # 심층 EDA (이승완 + 박병호)
+│   ├── final_exp.ipynb                # 최종 실험
+│   └── initial_data_analysis.ipynb    # 초기 데이터 분석 (이승완)
+├── team_src/                          # 팀원 개별 실험
+│   ├── best_model_test.ipynb          # 최고 성능 모델 테스트
+│   └── 시각화.ipynb                    # 결과 시각화
+├── class_metadata_uniqueness_analysis.csv  # 클래스별 메타데이터 고유성
+└── README.md
 ```
 
 ---
