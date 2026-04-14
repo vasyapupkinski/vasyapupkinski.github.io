@@ -11,7 +11,9 @@ order: 3
 
 ### Tech Stack
 
+<div class="tech-badges" markdown="1">
 ![FLUX.1](https://img.shields.io/badge/FLUX.1--Fill-white?style=flat-square&logo=huggingface) ![BiRefNet](https://img.shields.io/badge/BiRefNet-orange?style=flat-square&logo=huggingface) ![Real-ESRGAN](https://img.shields.io/badge/Real--ESRGAN-orange?style=flat-square&logo=huggingface) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![NF4](https://img.shields.io/badge/NF4%20Quantization-EBA000?style=flat-square&logo=huggingface)
+</div>
 
 ![생성 결과물 전시장](/assets/images/projects/adgen/showcase.png)
 *FLUX.1-Fill과 지능형 레이아웃 엔진이 결합되어 생성된 다양한 카테고리의 실제 광고물 예시*

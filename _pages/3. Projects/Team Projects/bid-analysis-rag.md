@@ -11,7 +11,9 @@ order: 2
 
 ### Tech Stack
 
+<div class="tech-badges" markdown="1">
 ![LangGraph](https://img.shields.io/badge/LangGraph-black?style=flat-square&logo=langchain) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![Upstage](https://img.shields.io/badge/Upstage%20Document%20Parse-6100FF?style=flat-square&logo=huggingface) ![Qdrant](https://img.shields.io/badge/Qdrant-FF4B4B?style=flat-square&logo=qdrant&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white) ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat-square&logo=python&logoColor=white) ![BAAI Reranker](https://img.shields.io/badge/BAAI%20Reranker-FF6F00?style=flat-square&logoColor=white)
+</div>
 
 ---
 

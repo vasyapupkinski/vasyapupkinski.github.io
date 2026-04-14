@@ -35,21 +35,7 @@ home: true
 ## 03. Skill
 **핵심 기술 및 전문 도구**
 
-<style>
-  .skill-list img {
-    display: inline-block !important;
-    width: auto !important;
-    height: 25px !important;
-    margin: 2px 4px !important;
-    vertical-align: middle !important;
-  }
-  .skill-list p, .skill-list ul, .skill-list li {
-    display: block !important;
-    margin-bottom: 5px !important;
-  }
-</style>
-
-<div class="skill-list" markdown="1">
+<div class="tech-badges" markdown="1">
 
 ### 인공지능 및 머신러닝 (AI & Machine Learning)
 *   **Language**: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
