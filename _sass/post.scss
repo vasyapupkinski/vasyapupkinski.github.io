@@ -28,11 +28,11 @@
     margin:auto;
   }
   .skill-list img, .tech-badges img {
-    display:inline-block;
-    width:auto;
-    height:25px;
-    margin:0 4px;
-    vertical-align:middle;
+    display:inline-block !important;
+    width:auto !important;
+    height:25px !important;
+    margin:0 4px !important;
+    vertical-align:middle !important;
   }
   .img-xs { width:12.5% !important; }
   .img-sm { width:25% !important; }
