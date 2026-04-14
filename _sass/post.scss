@@ -30,20 +30,35 @@
   .skill-list, .tech-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 2rem !important;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 1.5rem auto 2.5rem !important;
+    text-align: center;
+    width: 100%;
     
-    img, p {
-      display: inline-block !important;
-      width: auto !important;
+    p {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 12px !important;
       margin: 0 !important;
-      vertical-align: middle !important;
+      width: 100% !important;
+      text-align: center !important;
     }
 
-    p { margin-bottom: 0 !important; }
-
     img {
-      height: 25px !important;
+      display: inline-block !important;
+      width: auto !important;
+      height: 28px !important;
+      margin: 0 !important;
+      vertical-align: middle !important;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
   .img-xs { width:12.5% !important; }
