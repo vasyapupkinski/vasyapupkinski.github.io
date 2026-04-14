@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Machine Learning"
-category: "1. Theory / ML"
+category: "3. Theory / ML"
 order: 1
 ---
 

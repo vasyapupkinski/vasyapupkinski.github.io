@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "DeepLearning"
-category: "1. Theory / DeepLearning"
+category: "3. Theory / DeepLearning"
 order: 2
 ---
 

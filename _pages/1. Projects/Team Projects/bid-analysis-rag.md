@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Bid Analysis Agentic RAG: 비정형 데이터 정합성 강화 및 자율 교정 답변 생성"
-category: "3. Projects / Team Projects"
+category: "1. Projects / Team Projects"
 order: 2
 ---
 

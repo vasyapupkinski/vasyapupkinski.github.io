@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "Projects"
-category: "3. Projects"
-order: 3
+category: "1. Projects"
+order: 1
 ---
 
 <h2 style='border-bottom: 2px solid #F86158; padding-bottom: 10px;'>👥 Team Projects</h2>
 
 <div id='category-list'>
     <ul class='paginated-list'>
-    {% assign teams = site.pages | where: 'category', '3. Projects / Team Projects' | sort: 'order' %}
+    {% assign teams = site.pages | where: 'category', '1. Projects / Team Projects' | sort: 'order' %}
     {% for post in teams %}
         {% unless post.url contains 'index.html' %}
         <li class='paginated-item'>

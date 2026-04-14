@@ -1,0 +1,7 @@
+title: "이론 정리"
+layout: page
+category: "3. Theory"
+order: 3
+---
+
+여기에 노션에 정리한 이론이나 공유받은 자료를 정리.

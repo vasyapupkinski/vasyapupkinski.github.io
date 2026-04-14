@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Pill Detection AI: 알약 검출 AI 진단 최적화"
-category: "3. Projects / Team Projects"
+category: "1. Projects / Team Projects"
 order: 1
 ---
 

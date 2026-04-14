@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Computer Vision"
-category: "1. Theory / CV"
+category: "3. Theory / CV"
 order: 3
 ---
 

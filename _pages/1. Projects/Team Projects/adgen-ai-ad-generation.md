@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "AdGen AI: 고가용성 생성 파이프라인 구축"
-category: "3. Projects / Team Projects"
+category: "1. Projects / Team Projects"
 order: 3
 ---
 
