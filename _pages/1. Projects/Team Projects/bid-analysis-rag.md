@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Bid Analysis Agentic RAG: 비정형 데이터 정합성 강화 및 자율 교정 답변 생성"
+title: "자율 교정형 입찰 문서 RAG"
 category: "1. Projects / Team Projects"
 order: 2
 ---
 
-# Bid Analysis Agentic RAG: 비정형 데이터 정합성 강화 및 자율 교정 답변 생성
+# 자율 교정형 입찰 문서 RAG
 
 > **데이터 무결성 검증과 구조적 파싱을 통한 입찰 문서 정보 추출 시스템**
 
