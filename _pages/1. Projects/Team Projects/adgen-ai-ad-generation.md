@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "에이전트 기반 광고 이미지 생성"
+title: "AdGen - 에이전트 기반 광고 이미지 생성"
 category: "1. Projects / Team Projects"
 order: 3
 ---
 
-# 에이전트 기반 광고 이미지 생성
+# AdGen - 에이전트 기반 광고 이미지 생성
 
 > **VRAM 최적화와 오케스트레이션을 통한 End-to-End AI 광고 생성 서비스**
 

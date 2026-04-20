@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "자율 교정형 입찰 문서 RAG"
+title: "Bid Analysis - 자율 교정형 입찰 문서 RAG"
 category: "1. Projects / Team Projects"
 order: 2
 ---
 
-# 자율 교정형 입찰 문서 RAG
+# Bid Analysis - 자율 교정형 입찰 문서 RAG
 
 > **데이터 무결성 검증과 구조적 파싱을 통한 입찰 문서 정보 추출 시스템**
 

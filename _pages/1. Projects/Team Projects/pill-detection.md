@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "알약 검출 모델 진단 및 최적화"
+title: "Pill Detection - 알약 검출 모델 진단 및 최적화"
 category: "1. Projects / Team Projects"
 order: 1
 ---
 
-# 알약 검출 모델 진단 및 최적화
+# Pill Detection - 알약 검출 모델 진단 및 최적화
 
 > **데이터 무결성 확보를 위한 기술적 오디팅 및 일반화 성능 개선**
 
