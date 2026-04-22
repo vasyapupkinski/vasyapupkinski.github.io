@@ -89,7 +89,7 @@ master_data = defaultdict(lambda: {
 
 > **[Situation] 포인트**: 모든 이미지가 동일한 배경과 고정된 알약 배치(4개 지점) 등 YOLO가 학습하기에는 너무나도 동일한 환경적 요인들이 존재하여, 모델이 본질적인 특징을 학습하는 대신 단순한 픽셀 패턴을 암기하는 **'지름길 학습(Shortcut Learning)'**에 빠지기 매우 쉬운 **통제된 온실 환경**임을 확인했습니다.
 
-![원본 데이터 샘플: 통제된 배경(라벤더색)과 고정된 알약 배치(4개 지점) 확인](/assets/images/projects/pill-detection/pill-sample.png)
+![원본 데이터 샘플: 통제된 배경(라벤더색)과 고정된 알약 배치(4개 지점) 확인](../../../assets/images/projects/pill-detection/pill-sample.png)
 <br>
 
 여기서 실제 이미지를 보시면 아시겠지만 실제로 배경과 약의 위치는 고정되어 있다는걸 이미 눈치채셨을 겁니다. 모든 이미지가 동일한 배경과 동일한 위치에 알약이 배치되어 있고 이외에도 조명, 카메라 각도 등 다양한 요소들이 동일합니다. 이로인해 모델은 알약의 특징을 학습하는 대신, **"색상 + 모양 = 클래스"** 라는 단순한 룩업 테이블을 만들 수 있음을 의미합니다.
@@ -154,7 +154,7 @@ master_data = defaultdict(lambda: {
 ### 6.3 의사 레이블링 파이프라인 및 복구
 의사결정에 따라 다음과 같이 파이프라인을 구현했습니다. 정상 데이터로 베이스라인 학습 후 오류 데이터의 라벨을 자율적으로 복원하는 정밀 공정을 단행했습니다.
 
-![데이터 파이프라인 워크플로우: 정상 데이터와 프로세스를 거쳐 복원된 데이터를 하나로 결합하여 무결성을 확보함](/assets/images/projects/pill-detection/data-pipeline-final.png)
+![데이터 파이프라인 워크플로우: 정상 데이터와 프로세스를 거쳐 복원된 데이터를 하나로 결합하여 무결성을 확보함](../../../assets/images/projects/pill-detection/data-pipeline-final.png)
 <br>
 
 **Roboflow**를 활용하여 복원 과정의 시각적 검증과 라벨 보정을 수행했습니다.
@@ -242,7 +242,7 @@ master_data = defaultdict(lambda: {
 
 > **결론**: 모든 데이터가 **동일한 실험실 조건**에서 촬영되었습니다. 기존 모델들의 비정상적으로 높은 mAP는 '알약의 특징을 학습한 결과'가 아니라, **'특정 실험실의 픽셀 패턴을 암기한 결과'**였습니다.
 
-![환경적 편향 메타데이터 검증: 모든 데이터의 배경 및 조명 고유값이 1개뿐임을 증명](/assets/images/projects/pill-detection/some-eda.png)
+![환경적 편향 메타데이터 검증: 모든 데이터의 배경 및 조명 고유값이 1개뿐임을 증명](../../../assets/images/projects/pill-detection/some-eda.png)
 <br>
 
 ### 8.5 [Action] 후기 심화 EDA 및 코드 오디팅: '지름길 학습' 실체 규명
@@ -255,7 +255,7 @@ master_data = defaultdict(lambda: {
 * **디버깅 과정**: 이를 단순한 현상이 아닌 '시각화 코드 버그'로 의심하여 제가 직접 코드를 리팩토링했습니다. 분석 결과, BBox 좌표를 0~100% 스케일로 정규화해놓고 **시각화 함수(`plt.hist2d`)에 축 범위를 설정하지 않은 버그**임을 발견했습니다. 
 * **올바른 재해석**: 좌표를 수학적으로 보정하여 재시각화한 결과, 알약이 무작위가 아닌 **정확히 4개의 특정 좌표(좌상, 우상, 좌하, 우하)**에만 거의 고정적으로 등장하는 심각한 위치 편향을 확증했습니다.
 
-![BBox 중심점 2D 히트맵: 알약이 4개의 모서리 좌표에만 고정적으로 등장하는 공간적 편향 확증](/assets/images/projects/pill-detection/bbox-heatmap.png)
+![BBox 중심점 2D 히트맵: 알약이 4개의 모서리 좌표에만 고정적으로 등장하는 공간적 편향 확증](../../../assets/images/projects/pill-detection/bbox-heatmap.png)
 <br>
 
 #### 8.4.2 실험 방법론 오디팅을 통한 '배경 편향' 증명
@@ -264,7 +264,7 @@ master_data = defaultdict(lambda: {
 * **오디팅 과정(재검증)**: 분석 스크립트를 재검토한 결과, 알약 객체만 Crop 하지 않고 **넓은 배경이 통째로 포함된 원본 이미지를 특징 추출 모델(ResNet50)에 통과**시키는 오류를 발견했습니다.
 * **올바른 재해석**: 스코어 -0.41은 알약의 유사성이 아니라, 이미지의 90%를 차지하는 **동일한 라벤더색 배경에 딥러닝 모델의 시야가 압도(Dominated)**된 결과입니다. 이 발견은 본 데이터셋의 환경이 실전과 동떨어진 단일 환경임을 증명하는 근거가 되었습니다.
 
-![t-SNE 시각화 팩트체크: 라벤더색 단일 배경에 의해 압도당해 군집이 제대로 뭉치지 못한 특징 공간](/assets/images/projects/pill-detection/tsne-plot.png)
+![t-SNE 시각화 팩트체크: 라벤더색 단일 배경에 의해 압도당해 군집이 제대로 뭉치지 못한 특징 공간](../../../assets/images/projects/pill-detection/tsne-plot.png)
 <br>
 
 #### 8.4.3 역설의 결론: '지름길 학습(Shortcut Learning)' 꼼수 규명
