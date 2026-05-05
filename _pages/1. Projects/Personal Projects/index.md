@@ -2,7 +2,7 @@
 layout: page
 title: "Personal Projects"
 category: "1. Projects / Personal Projects"
-order: 2
+order: 10
 ---
 
 ## 개인 프로젝트 아카이브
