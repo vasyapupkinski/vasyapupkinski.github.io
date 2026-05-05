@@ -2,12 +2,13 @@
 layout: page
 title: "Project Clairvoyance"
 category: "1. Projects / Personal Projects"
+status: "Planned"
 order: 3
 ---
 
 # Project Clairvoyance
 
-전 세계의 실시간 오픈소스 인텔리전스(OSINT) 및 다종의 데이터를 수집, 교차 분석하여 거시적 인사이트와 예측을 제공하는 글로벌 모니터링 에이전트 시스템입니다.
+전 세계의 실시간 오픈소스 인텔리전스(OSINT) 및 다종의 데이터를 수집, 교차 분석하여 거시적 인사이트와 예측을 제공하는 글로벌 모니터링 에이전트 시스템으로, **향후 개발 예정인 프로젝트**입니다.
 
 ## 프로젝트 개요 (Overview)
 - **목표:** 전 세계 무료 데이터 소스(자연재해, 경제, 지정학적 이슈 등)를 통합하여, 상호 독립적인 데이터 포인트에서 유의미한 상관관계를 추론해 내는 정보 체계 구축.

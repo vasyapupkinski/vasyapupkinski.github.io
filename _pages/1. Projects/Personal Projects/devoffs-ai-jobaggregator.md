@@ -2,12 +2,13 @@
 layout: page
 title: "Devoffs-AI-Jobaggregator"
 category: "1. Projects / Personal Projects"
+status: "In Progress"
 order: 1
 ---
 
 # Devoffs-AI-Jobaggregator
 
-개발자의 기술 스택과 실무 프로젝트 역량에 최적화된 맞춤형 채용 기회를 제공하는 지능형 채용 데이터 통합 플랫폼입니다.
+개발자의 기술 스택과 실무 프로젝트 역량에 최적화된 맞춤형 채용 기회를 제공하는 지능형 채용 데이터 통합 플랫폼으로, **현재 핵심 기능을 개발 중인 프로젝트**입니다.
 
 ## 프로젝트 개요 (Overview)
 - **목표:** 다수의 채용 플랫폼에 분산된 공고를 수집하고, 개발자 관점에서 유의미한 정보만 정제하여 통합 제공.

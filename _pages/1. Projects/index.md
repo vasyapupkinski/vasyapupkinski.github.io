@@ -43,7 +43,7 @@ order: 1
                     <a href='{{ post.url | prepend: site.baseurl }}'><h1 class='title_post'>{{ post.title }}</h1></a>
                     <div class='info-post'>
                         <span class='category' style='color: #2ACB45;'>Personal Project</span>
-                        <span class='category' style='color: #888; margin-left: 10px;'>Status: Planned</span>
+                        <span class='category' style='color: #888; margin-left: 10px;'>Status: {{ post.status }}</span>
                     </div>
                 </div>
             </div>

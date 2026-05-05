@@ -2,12 +2,13 @@
 layout: page
 title: "ViralInsight"
 category: "1. Projects / Personal Projects"
+status: "Planned"
 order: 2
 ---
 
 # ViralInsight
 
-소셜 플랫폼의 초기 반응 패턴을 실시간으로 수집 및 분석하여 콘텐츠의 바이럴 확산 가능성을 조기에 감지하고 예측하는 플랫폼입니다.
+소셜 플랫폼의 초기 반응 패턴을 실시간으로 수집 및 분석하여 콘텐츠의 바이럴 확산 가능성을 조기에 감지하고 예측하는 플랫폼으로, **향후 개발 예정인 프로젝트**입니다.
 
 ## 프로젝트 개요 (Overview)
 - **목표:** Reddit, YouTube 등 주요 소셜 미디어 플랫폼의 신규 게시물 트래픽을 추적하여 바이럴 가능성이 높은 콘텐츠를 선제적으로 식별.
