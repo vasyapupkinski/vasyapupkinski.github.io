@@ -3,7 +3,7 @@ layout: page
 title: "ViralInsight - 바이럴 조기 감지 및 트렌드 분석 플랫폼"
 category: "1. Projects / Personal Projects"
 status: "Planned"
-order: 2
+order: 20
 ---
 
 # ViralInsight - 바이럴 조기 감지 및 트렌드 분석 플랫폼

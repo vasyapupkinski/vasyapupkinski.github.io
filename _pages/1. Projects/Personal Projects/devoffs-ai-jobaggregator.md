@@ -3,7 +3,7 @@ layout: page
 title: "Devoffs - 개발자 특화 채용 통합 플랫폼"
 category: "1. Projects / Personal Projects"
 status: "In Progress"
-order: 1
+order: 10
 ---
 
 # Devoffs - 개발자 특화 채용 통합 플랫폼

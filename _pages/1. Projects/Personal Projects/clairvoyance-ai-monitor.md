@@ -3,7 +3,7 @@ layout: page
 title: "Project Clairvoyance - 글로벌 인텔리전스 통찰 시스템"
 category: "1. Projects / Personal Projects"
 status: "Planned"
-order: 3
+order: 30
 ---
 
 # Project Clairvoyance - 글로벌 인텔리전스 통찰 시스템
