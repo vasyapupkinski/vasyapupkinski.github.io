@@ -4,6 +4,7 @@ title: "Project Clairvoyance - 글로벌 인텔리전스 통찰 시스템"
 category: "1. Projects / Personal Projects"
 status: "Planned"
 order: 30
+date: 2026-05-03
 ---
 
 # Project Clairvoyance - 글로벌 인텔리전스 통찰 시스템

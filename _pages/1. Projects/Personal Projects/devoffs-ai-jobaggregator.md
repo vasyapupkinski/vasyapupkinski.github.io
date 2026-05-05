@@ -4,6 +4,7 @@ title: "Devoffs - 개발자 특화 채용 통합 플랫폼"
 category: "1. Projects / Personal Projects"
 status: "In Progress"
 order: 10
+date: 2026-05-05
 ---
 
 # Devoffs - 개발자 특화 채용 통합 플랫폼
