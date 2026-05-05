@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "ViralInsight"
+title: "ViralInsight - 바이럴 조기 감지 및 트렌드 분석 플랫폼"
 category: "1. Projects / Personal Projects"
 status: "Planned"
 order: 2
 ---
 
-# ViralInsight
+# ViralInsight - 바이럴 조기 감지 및 트렌드 분석 플랫폼
 
 소셜 플랫폼의 초기 반응 패턴을 실시간으로 수집 및 분석하여 콘텐츠의 바이럴 확산 가능성을 조기에 감지하고 예측하는 플랫폼으로, **향후 개발 예정인 프로젝트**입니다.
 

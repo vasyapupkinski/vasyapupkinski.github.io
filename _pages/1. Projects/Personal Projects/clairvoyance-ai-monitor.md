@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Project Clairvoyance"
+title: "Project Clairvoyance - 글로벌 인텔리전스 통찰 시스템"
 category: "1. Projects / Personal Projects"
 status: "Planned"
 order: 3
 ---
 
-# Project Clairvoyance
+# Project Clairvoyance - 글로벌 인텔리전스 통찰 시스템
 
 전 세계의 실시간 오픈소스 인텔리전스(OSINT) 및 다종의 데이터를 수집, 교차 분석하여 거시적 인사이트와 예측을 제공하는 글로벌 모니터링 에이전트 시스템으로, **향후 개발 예정인 프로젝트**입니다.
 

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Devoffs-AI-Jobaggregator"
+title: "Devoffs - 개발자 특화 채용 통합 플랫폼"
 category: "1. Projects / Personal Projects"
 status: "In Progress"
 order: 1
 ---
 
-# Devoffs-AI-Jobaggregator
+# Devoffs - 개발자 특화 채용 통합 플랫폼
 
 개발자의 기술 스택과 실무 프로젝트 역량에 최적화된 맞춤형 채용 기회를 제공하는 지능형 채용 데이터 통합 플랫폼으로, **현재 핵심 기능을 개발 중인 프로젝트**입니다.
 
