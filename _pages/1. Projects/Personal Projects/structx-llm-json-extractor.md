@@ -25,6 +25,7 @@ date: 2026-05-11
 ## 기술 구현 및 최적화 (Technical Implementation)
 - **QLoRA 파인튜닝:** `Unsloth`와 `PEFT`를 활용하여 학습 속도를 2배 이상 가속화하고 메모리 점유율을 70% 절감.
 - **Advanced Quantization:** 4-bit NF4(NormalFloat4) 및 Double Quantization을 적용하여 모델 가중치 정밀도 손실 최소화.
+- **"Extreme Diet" Config:** VRAM 12GB 환경에 최적화된 학습 설정(Rank 16, Seq Length 2048 등)을 통해 OOM 없이 안정적인 파인튜닝 수행.
 - **MoE Offloading:** 전체 파라미터가 아닌 활성 전문가(Active Experts) 위주로 GPU 메모리를 점유하게 설계하여 12GB 카드의 물리적 한계 극복.
 
 ## 기술 스택 (Tech Stack)
