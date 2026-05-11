@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "StructX-LLM - 고성능 구조화 데이터 추출 엔진"
+title: "SBV-LLM - 고성능 구조화 데이터 추출 엔진"
 category: "1. Projects / Personal Projects"
 status: "In Progress"
 order: 5
 date: 2026-05-11
 ---
 
-# StructX-LLM - 고성능 구조화 데이터 추출 엔진
+# SBV-LLM - 고성능 구조화 데이터 추출 엔진
 
 비정형 데이터의 혼돈 속에서 완벽한 JSON 구조를 추출하기 위해 설계된 **정보 추출(Extraction) 전용 특화 모델 엔진**입니다. 에이전트 시스템의 출력 안정성을 보장하며 상용 모델 대비 극강의 가성비를 제공합니다.
 
@@ -21,7 +21,7 @@ date: 2026-05-11
 - **LoRA vs DoRA Benchmarking:** 단순 LoRA와 최신 DoRA 기법의 성능을 비교 분석하여 12GB VRAM 환경에서의 최적 파인튜닝 기법 도출.
 - **JSON-Only Decoding:** 철저하게 JSON 데이터만 출력하도록 인스트럭션 튜닝을 진행하여 후처리가 필요 없는 클린 데이터 제공.
 - **VRAM Optimization:** 12GB VRAM 환경에서 100B급 MoE 모델(Llama-4 Scout)을 구동하기 위한 메모리 최적화 레이어 오프로딩 적용.
-- **Structured Scoring:** 추출된 정보의 정확도뿐만 아니라 JSON 스키마 준수율을 정량적으로 측정하는 독자적인 벤치마킹 지표 구축.
+- **SBV-LLM Structured Scoring:** 추출된 정보의 정확도뿐만 아니라 JSON 스키마 준수율을 정량적으로 측정하는 독자적인 벤치마킹 지표 구축.
 
 ## 기술 구현 및 최적화 (Technical Implementation)
 - **QLoRA 파인튜닝:** `Unsloth`와 `PEFT`를 활용하여 학습 속도를 2배 이상 가속화하고 메모리 점유율을 70% 절감. (`use_dora=True` 옵션을 통한 성능 최적화 포함)

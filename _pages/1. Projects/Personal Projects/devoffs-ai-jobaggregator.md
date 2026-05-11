@@ -25,7 +25,7 @@ date: 2026-05-05
 
 ## 아키텍처 및 파이프라인 (Architecture)
 - **Data Collection:** Celery Beat 기반 스케줄러와 Crawl4AI를 활용하여 타겟 플랫폼의 채용 공고를 마크다운 형식으로 정기 수집.
-- **Processing / AI:** 직접 파인튜닝한 **StructX-LLM(Core Engine)**을 연동하여 수집된 마크다운에서 스택 및 요약 데이터를 100% 규격화된 JSON으로 추출. 상용 모델 대비 비용을 절감하면서도 에이전트의 안정성 확보.
+- **Processing / AI:** 직접 파인튜닝한 **SBV-LLM(Core Engine)**을 연동하여 수집된 마크다운에서 스택 및 요약 데이터를 100% 규격화된 JSON으로 추출. 상용 모델 대비 비용을 절감하면서도 에이전트의 안정성 확보.
 - **Serving / Frontend:** FastAPI를 통해 정제된 데이터를 서빙하며, SSE(Server-Sent Events)를 활용하여 AI 분석 과정을 실시간 스트리밍. Redis를 통해 검색 쿼리 및 대화 상태 캐싱.
 
 ## 기술 스택 (Tech Stack)
