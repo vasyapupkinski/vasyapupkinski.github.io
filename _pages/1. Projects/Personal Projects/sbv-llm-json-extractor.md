@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "SBV-LLM - 고성능 구조화 데이터 추출 엔진"
+title: "SBV-LLM (Struct Bee Vector) - 고성능 구조화 데이터 추출 엔진"
 category: "1. Projects / Personal Projects"
 status: "In Progress"
 order: 5
 date: 2026-05-11
 ---
 
-# SBV-LLM - 고성능 구조화 데이터 추출 엔진
+# SBV-LLM (Struct Bee Vector) - 고성능 구조화 데이터 추출 엔진
 
 비정형 데이터의 혼돈 속에서 완벽한 JSON 구조를 추출하기 위해 설계된 **정보 추출(Extraction) 전용 특화 모델 엔진**입니다. 에이전트 시스템의 출력 안정성을 보장하며 상용 모델 대비 극강의 가성비를 제공합니다.
 
