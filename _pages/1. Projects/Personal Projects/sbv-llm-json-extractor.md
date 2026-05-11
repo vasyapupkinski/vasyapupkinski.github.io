@@ -27,7 +27,8 @@ date: 2026-05-11
 - **QLoRA 파인튜닝:** `Unsloth`와 `PEFT`를 활용하여 학습 속도를 2배 이상 가속화하고 메모리 점유율을 70% 절감. (`use_dora=True` 옵션을 통한 성능 최적화 포함)
 - **Advanced Quantization:** 4-bit NF4(NormalFloat4) 및 Double Quantization을 적용하여 모델 가중치 정밀도 손실 최소화.
 - **"Extreme Diet" Config:** VRAM 12GB 환경에 최적화된 학습 설정(Rank 16, Seq Length 2048 등)을 통해 OOM 없이 안정적인 파인튜닝 수행.
-- **MoE Offloading:** 전체 파라미터가 아닌 활성 전문가(Active Experts) 위주로 GPU 메모리를 점유하게 설계하여 12GB 카드의 물리적 한계 극복.
+- **Dual-Stage Quantization:** 학습 시에는 메모리 최적화(QLoRA), 배포 시에는 추론 가속화(PTQ/GGUF)를 위한 2단계 양자화 파이프라인 구축.
+- **MoE Offloading:** 전체 파라미터가 아닌 활성 전문가(Active Experts) 위주로 GPU 메모리를 점유하게 설계하여 12GB 카드의 물리적 한계 격복.
 
 ## 기술 스택 (Tech Stack)
 - **Base Models:** Llama-4-Scout (17B Active), Qwen-3.6-35B (3B Active), Gemma-4-26B (4B Active)
