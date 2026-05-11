@@ -24,7 +24,7 @@ date: 2026-05-04
 
 ## 아키텍처 및 파이프라인 (Architecture)
 - **Data Collection:** PRAW(Reddit API) 및 YouTube Data API를 연동하여 타겟 서브레딧과 키워드의 실시간 피드 수집.
-- **Processing / AI:** Redis 큐와 Celery 워커를 활용하여 비동기 지연 재조회(Delayed Retry) 파이프라인 구성. Gemini API로 자연어 피처 추출 후 XGBoost 추론 수행.
+- **Processing / AI:** Redis 큐와 Celery 워커를 활용하여 비동기 지연 재조회(Delayed Retry) 파이프라인 구성. 직접 파인튜닝한 **StructX-LLM(Core Engine)**을 활용하여 댓글 내 논쟁성/감정 지수를 정밀 수치화한 후 XGBoost 추론 수행.
 - **Serving / Frontend:** Streamlit 기반 대시보드를 구축하여 예측 랭킹 시각화 및 텔레그램 봇(Telegram Bot API)을 통한 즉각적인 알림 전송.
 
 ## 기술 스택 (Tech Stack)
