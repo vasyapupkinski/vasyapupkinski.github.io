@@ -18,6 +18,7 @@ date: 2026-05-11
 
 ## 핵심 기능 (Core Features)
 - **Multi-Model Benchmarking:** Llama-4, Qwen-3.6, Gemma-4 등 최신 모델 3종을 동일 데이터셋으로 학습시켜 최적의 추출 엔진 선정.
+- **LoRA vs DoRA Benchmarking:** 단순 LoRA와 최신 DoRA 기법의 성능을 비교 분석하여 12GB VRAM 환경에서의 최적 파인튜닝 기법 도출.
 - **JSON-Only Decoding:** 철저하게 JSON 데이터만 출력하도록 인스트럭션 튜닝을 진행하여 후처리가 필요 없는 클린 데이터 제공.
 - **VRAM Optimization:** 12GB VRAM 환경에서 100B급 MoE 모델(Llama-4 Scout)을 구동하기 위한 메모리 최적화 레이어 오프로딩 적용.
 - **Structured Scoring:** 추출된 정보의 정확도뿐만 아니라 JSON 스키마 준수율을 정량적으로 측정하는 독자적인 벤치마킹 지표 구축.
