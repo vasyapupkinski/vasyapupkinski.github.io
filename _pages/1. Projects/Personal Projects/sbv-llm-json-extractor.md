@@ -17,7 +17,7 @@ date: 2026-05-11
 - **해결 방안:** 최신 MoE(Mixture-of-Experts) 아키텍처 모델을 QLoRA 및 양자화 기술로 튜닝하여, 저사양 하드웨어에서도 100% 신뢰할 수 있는 JSON 데이터를 생성.
 
 ## 핵심 기능 (Core Features)
-- **Multi-Model Benchmarking:** Llama-4, Qwen-3.6, Gemma-4 등 최신 모델 3종을 동일 데이터셋으로 학습시켜 최적의 추출 엔진 선정.
+- **Multi-Model Benchmarking:** Llama-4와 Gemma-4 등 최신 모델 2종을 동일 데이터셋으로 학습시켜 최적의 추출 엔진 선정.
 - **LoRA vs DoRA Benchmarking:** 단순 LoRA와 최신 DoRA 기법의 성능을 비교 분석하여 12GB VRAM 환경에서의 최적 파인튜닝 기법 도출.
 - **JSON-Only Decoding:** 철저하게 JSON 데이터만 출력하도록 인스트럭션 튜닝을 진행하여 후처리가 필요 없는 클린 데이터 제공.
 - **VRAM Optimization:** 12GB VRAM 환경에서 100B급 MoE 모델(Llama-4 Scout)을 구동하기 위한 메모리 최적화 레이어 오프로딩 적용.
@@ -32,7 +32,7 @@ date: 2026-05-11
 
 ## 기술 스택 (Tech Stack)
 - **Data Collection:** Crawl4AI (Open-source LLM-friendly Scraping)
-- **Base Models:** Llama-4-Scout (17B Active), Qwen-3.6-35B (3B Active), Gemma-4-26B (4B Active)
+- **Base Models:** Llama-4-Scout (17B Active), Gemma-4-26B (4B Active)
 - **Fine-tuning:** Unsloth, QLoRA (bitsandbytes, PEFT)
 - **Optimization:** llama.cpp (GGUF), PTQ (Post-Training Quantization)
 - **Deployment:** FastAPI, Ollama, Docker
