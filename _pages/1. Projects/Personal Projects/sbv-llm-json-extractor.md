@@ -17,8 +17,9 @@ date: 2026-05-11
 - **해결 방안:** 최신 MoE(Mixture-of-Experts) 아키텍처 모델을 QLoRA 및 양자화 기술로 튜닝하여, 저사양 하드웨어에서도 100% 신뢰할 수 있는 JSON 데이터를 생성.
 
 ## 핵심 기능 (Core Features)
-- **Multi-Model Benchmarking:** Llama-4-Scout(17B)와 Gemma-4-9B 등 최신 모델 2종을 동일 데이터셋으로 학습시켜 성능을 비교 분석.
-- **LoRA vs DoRA Benchmarking:** 단순 LoRA와 최신 DoRA 기법의 성능을 비교 분석하여 12GB VRAM 환경에서의 최적 파인튜닝 기법 도출.
+- **From Base to Expert:** 대화형 튜닝이 되지 않은 **Gemma-4-E4B (Base)** 모델을 직접 인스트럭션 튜닝하여 특정 도메인(JSON 추출) 전문가로 재탄생.
+- **Unsloth Optimization:** Unsloth 라이브러리를 활용하여 12GB VRAM 제약 하에서 학습 속도 2배 향상 및 메모리 효율 70% 극대화.
+- **DoRA Fine-tuning:** 가중치 분해(Weight-Decomposed) LoRA 기법을 적용하여 단순 LoRA 대비 높은 추론 정확도 확보.
 - **JSON-Only Decoding:** 철저하게 JSON 데이터만 출력하도록 인스트럭션 튜닝을 진행하여 후처리가 필요 없는 클린 데이터 제공.
 - **VRAM Optimization:** 12GB VRAM 환경에서 100B급 MoE 모델(Llama-4 Scout)을 구동하기 위한 메모리 최적화 레이어 오프로딩 적용.
 - **SBV-LLM Structured Scoring:** 추출된 정보의 정확도뿐만 아니라 JSON 스키마 준수율을 정량적으로 측정하는 독자적인 벤치마킹 지표 구축.
@@ -32,8 +33,8 @@ date: 2026-05-11
 
 ## 기술 스택 (Tech Stack)
 - **Data Collection:** Crawl4AI (Open-source LLM-friendly Scraping)
-- **Base Models:** Llama-4-Scout (17B Active), Gemma-4-9B-it
-- **Fine-tuning:** Unsloth, QLoRA (bitsandbytes, PEFT)
+- **Base Model:** google/gemma-4-E4B (8B, Base)
+- **Fine-tuning:** **Unsloth**, QLoRA, DoRA
 - **Optimization:** llama.cpp (GGUF), PTQ (Post-Training Quantization)
 - **Deployment:** FastAPI, Ollama, Docker
 - **Research Base:** LoRA (2021), QLoRA (2023), DoRA (2024)
