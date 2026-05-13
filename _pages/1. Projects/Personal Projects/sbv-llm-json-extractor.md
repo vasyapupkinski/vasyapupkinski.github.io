@@ -31,6 +31,7 @@ date: 2026-05-11
 - **MoE Offloading:** 전체 파라미터가 아닌 활성 전문가(Active Experts) 위주로 GPU 메모리를 점유하게 설계하여 12GB 카드의 물리적 한계 격복.
 
 ## 기술 스택 (Tech Stack)
+- **Data Collection:** Crawl4AI (Open-source LLM-friendly Scraping)
 - **Base Models:** Llama-4-Scout (17B Active), Qwen-3.6-35B (3B Active), Gemma-4-26B (4B Active)
 - **Fine-tuning:** Unsloth, QLoRA (bitsandbytes, PEFT)
 - **Optimization:** llama.cpp (GGUF), PTQ (Post-Training Quantization)
